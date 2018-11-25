@@ -1,3 +1,4 @@
-# Project Proposal
+# Programmeerproject
+# Ontwikkeling sociale zekerheid in Nederland
 
 ## Problem statement
