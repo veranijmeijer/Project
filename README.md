@@ -27,5 +27,8 @@ Met behulp van deze visualisatie wordt duidelijk gemaakt hoeveel uitkeringen er 
 * D3-tip
 
 ### Review
+Op de site van het CBS staan ook vele visualisaties van de data, zoals op de volgende pagina: https://www.cbs.nl/nl-nl/nieuws/2018/46/groei-van-het-bbp-vlakt-af.
+Op die pagina is een bar chart te zien, die ongeveer dezelfde specificaties heeft als de bar chart die ik wil maken. Hier kan ik dus een voorbeeld aan nemen en kijken welke onderdelen daarvan ik ook wil gebruiken. Op de rest van de site van het CBS staan nog veel meer voorbeelden van datavisualisaties. Het CBS gebruikt HighCharts voor de visualisatie. Voor mijn project ga ik echter D3 gebruiken.
 
 ### Moeilijkste onderdelen
+De lastigste onderdelen van deze datavisualisatie zijn het maken van de kaart en het koppelen van alle visualisaties aan elkaaar. Beide onderdelen heb ik nooit eerder gedaan, dus daarvan moet ik nog uitzoeken hoe het werkt.
