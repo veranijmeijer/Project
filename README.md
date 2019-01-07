@@ -8,7 +8,7 @@ Er zijn in Nederland veel mensen die een uitkering krijgen. Toch zijn er weinig 
 Met behulp van deze visualisatie wordt duidelijk gemaakt hoeveel uitkeringen er worden uitgegeven en hoe deze uitkeringen verdeeld zijn de afgelopen jaren en door welke factoren dit beïnvloedt wordt.
 
 ## Schets
-![](doc/schets.jpg)
+![](doc/sketch.jpg)
 
 ## Main features
 * Stacked barchart van de soorten uitkeringen per jaar(MVP)
