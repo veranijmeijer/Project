@@ -13,6 +13,7 @@ Alle data komt in csv bestanden van de website van het CBS. Deze bestanden staan
   * https://opendata.cbs.nl/statline/portal.html?_la=nl&_catalog=CBS&tableId=84114NED&_theme=377
   
 ## Diagram
+![](doc/diagram.jpg)
 
 ## Components
 * stacked bar chart: in deze bar chart wordt weergegeven hoeveel uitkeringen er ieder jaar waren en welke uitkeringen dit waren. Hiervoor kan ik de bar chart die ik in het vak datavisualisaties uitbreiden naar een stacked bar chart. Wanneer op een van de laatste drie jaren wordt geklikt wordt de map geupdate.
