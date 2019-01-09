@@ -1,5 +1,11 @@
 # Day 1 (wed 9 Jan)
-* Website created with different html files
-* Navigation bar added
-* Data sources added to website
-* Started with information page (will be finished tomorrow)
+Gedaan:
+* Website gemaakt
+* Verschillende html files aangemaakt
+* Navigation bar toegevoegd
+* Data bronnen aan de website toegevoegd
+* Begonnen met verhaal over de data
+
+To do morgen:
+* Verhaal over de data afmaken
+* Data verwerken van csv naar json file
