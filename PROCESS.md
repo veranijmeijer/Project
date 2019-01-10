@@ -1,4 +1,4 @@
-# Day 1 (wed 9 Jan)
+# Day 1 (woe 9 jan)
 Gedaan:
 * Website gemaakt
 * Verschillende html files aangemaakt
@@ -9,3 +9,12 @@ Gedaan:
 To do morgen:
 * Verhaal over de data afmaken
 * Data verwerken van csv naar json file
+
+# Day 2 (don 10 jan)
+Gedaan:
+* Basispagina's website afgemaakt
+* Story deels afgemaakt
+
+To do morgen:
+* Data verwerken van csv naar json files
+* Beginnen aan stacked bar chart
