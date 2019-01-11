@@ -1,6 +1,9 @@
 # Projectvoorstel programmeerproject
 # Ontwikkeling sociale zekerheid in Nederland
 
+## Website
+https://veranijmeijer.github.io/Project/index
+
 ## Probleem
 Er zijn in Nederland veel mensen die een uitkering krijgen. Toch zijn er weinig mensen die weten hoeveel uitkeringen er worden uitgegeven en welke. Er is dus een gebrek aan kennis over de uitkeringen in Nederland. De doelgroep van deze datavisualisatie zijn mensen met interesse in de sociale zekerheid in Nederland en de verdeling van de uitkeringen de afgelopen jaren. Met deze visualisatie zal er meer duidelijkheid komen over uitkeringen in Nederland.
 
@@ -34,3 +37,4 @@ Op die pagina is een barchart te zien, die ongeveer dezelfde specificaties heeft
 
 ### Moeilijkste onderdelen
 Het lastigste onderdeel van deze datavisualisatie is het koppelen van alle visualisaties aan elkaaar. Dat heb ik alelen in het klein gedaan voor de laatste opdracht van data, dus dat wordt hier wel lastiger.
+
