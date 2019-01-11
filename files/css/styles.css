@@ -28,3 +28,13 @@ ul, ol, h4, h6, p, .datatext {
   margin-right: 10px;
   text-align: justify;
 }
+.title_bar {
+  text-align: center;
+}
+.svg {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
