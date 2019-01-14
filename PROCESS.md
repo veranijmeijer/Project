@@ -20,9 +20,19 @@ To do morgen:
 * Beginnen aan stacked bar chart
 
 # Dag 3 (vrij 11 jan)
-* Data van csv verwerkt naar json
+* Data van csv verwerkt naar json (voor bar-/linechart)
 * Begonnen aan stacked bar chart
 
 To do maandag:
 * Overwegen om ipv barchart een linechart met cirkeldiagram per jaar te maken
 * Verder met 1e visualisatie (bar-/linechart)
+
+# Dag 4 (maa 14 jan)
+* Data van csv verwerkt naar json (voor map)
+* Niet-interactieve versie van map is af (voor 1 jaar)
+* Keuze gemaakt om barchart en scatterplot in te ruilen voor linechart en piechart (in overleg met Kim)
+
+To do morgen:
+* Indeling visualisaties maken
+* Beginnen aan linechart
+* Oplossing bedenken voor gefuseerde gemeentes tussen 2015 en 2017
