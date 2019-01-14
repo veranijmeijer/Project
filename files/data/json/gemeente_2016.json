@@ -1,0 +1,1952 @@
+{
+    "GM1680": {
+        "Inwoners": 21710.0,
+        "Bijstandsontvangers": 420.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0738": {
+        "Inwoners": 10540.0,
+        "Bijstandsontvangers": 140.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0358": {
+        "Inwoners": 25520.0,
+        "Bijstandsontvangers": 290.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM0197": {
+        "Inwoners": 22590.0,
+        "Bijstandsontvangers": 380.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM0059": {
+        "Inwoners": 22780.0,
+        "Bijstandsontvangers": 770.0,
+        "Bijstandsdichtheid": 33.5
+    },
+    "GM0482": {
+        "Inwoners": 16070.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 24.5
+    },
+    "GM0613": {
+        "Inwoners": 20430.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0361": {
+        "Inwoners": 91050.0,
+        "Bijstandsontvangers": 3020.0,
+        "Bijstandsdichtheid": 33.0
+    },
+    "GM0141": {
+        "Inwoners": 60290.0,
+        "Bijstandsontvangers": 3680.0,
+        "Bijstandsdichtheid": 61.0
+    },
+    "GM0034": {
+        "Inwoners": 162100.0,
+        "Bijstandsontvangers": 7030.0,
+        "Bijstandsdichtheid": 43.5
+    },
+    "GM0484": {
+        "Inwoners": 90250.0,
+        "Bijstandsontvangers": 2080.0,
+        "Bijstandsdichtheid": 23.0
+    },
+    "GM1723": {
+        "Inwoners": 8510.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0060": {
+        "Inwoners": 3020.0,
+        "Bijstandsontvangers": 10.0,
+        "Bijstandsdichtheid": 3.5
+    },
+    "GM0307": {
+        "Inwoners": 124740.0,
+        "Bijstandsontvangers": 4080.0,
+        "Bijstandsdichtheid": 32.5
+    },
+    "GM0362": {
+        "Inwoners": 73750.0,
+        "Bijstandsontvangers": 1310.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM0363": {
+        "Inwoners": 718500.0,
+        "Bijstandsontvangers": 49460.0,
+        "Bijstandsdichtheid": 69.0
+    },
+    "GM0200": {
+        "Inwoners": 134120.0,
+        "Bijstandsontvangers": 4190.0,
+        "Bijstandsdichtheid": 31.0
+    },
+    "GM0003": {
+        "Inwoners": 10160.0,
+        "Bijstandsontvangers": 520.0,
+        "Bijstandsdichtheid": 51.5
+    },
+    "GM0202": {
+        "Inwoners": 130310.0,
+        "Bijstandsontvangers": 9330.0,
+        "Bijstandsdichtheid": 71.5
+    },
+    "GM0106": {
+        "Inwoners": 55900.0,
+        "Bijstandsontvangers": 2390.0,
+        "Bijstandsdichtheid": 42.5
+    },
+    "GM0743": {
+        "Inwoners": 14110.0,
+        "Bijstandsontvangers": 240.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0744": {
+        "Inwoners": 5740.0,
+        "Bijstandsontvangers": 90.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0308": {
+        "Inwoners": 20580.0,
+        "Bijstandsontvangers": 410.0,
+        "Bijstandsdichtheid": 20.0
+    },
+    "GM0489": {
+        "Inwoners": 38950.0,
+        "Bijstandsontvangers": 600.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0203": {
+        "Inwoners": 44210.0,
+        "Bijstandsontvangers": 690.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0005": {
+        "Inwoners": 8760.0,
+        "Bijstandsontvangers": 190.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0888": {
+        "Inwoners": 13960.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 25.0
+    },
+    "GM0370": {
+        "Inwoners": 7690.0,
+        "Bijstandsontvangers": 90.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0889": {
+        "Inwoners": 11390.0,
+        "Bijstandsontvangers": 270.0,
+        "Bijstandsdichtheid": 23.5
+    },
+    "GM0007": {
+        "Inwoners": 7770.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 32.0
+    },
+    "GM1945": {
+        "Inwoners": 29920.0,
+        "Bijstandsontvangers": 920.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM1724": {
+        "Inwoners": 15550.0,
+        "Bijstandsontvangers": 180.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM0893": {
+        "Inwoners": 11260.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0373": {
+        "Inwoners": 26040.0,
+        "Bijstandsontvangers": 340.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0748": {
+        "Inwoners": 56180.0,
+        "Bijstandsontvangers": 2110.0,
+        "Bijstandsdichtheid": 37.5
+    },
+    "GM1859": {
+        "Inwoners": 37450.0,
+        "Bijstandsontvangers": 700.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM1721": {
+        "Inwoners": 25210.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0753": {
+        "Inwoners": 24390.0,
+        "Bijstandsontvangers": 500.0,
+        "Bijstandsdichtheid": 20.5
+    },
+    "GM0209": {
+        "Inwoners": 21490.0,
+        "Bijstandsontvangers": 480.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0375": {
+        "Inwoners": 33980.0,
+        "Bijstandsontvangers": 1160.0,
+        "Bijstandsdichtheid": 34.5
+    },
+    "GM0063": {
+        "Inwoners": 8710.0,
+        "Bijstandsontvangers": 300.0,
+        "Bijstandsdichtheid": 34.5
+    },
+    "GM0310": {
+        "Inwoners": 35490.0,
+        "Bijstandsontvangers": 750.0,
+        "Bijstandsdichtheid": 21.0
+    },
+    "GM0585": {
+        "Inwoners": 24410.0,
+        "Bijstandsontvangers": 280.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM1728": {
+        "Inwoners": 16870.0,
+        "Bijstandsontvangers": 180.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM0376": {
+        "Inwoners": 8480.0,
+        "Bijstandsontvangers": 130.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0377": {
+        "Inwoners": 18790.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM1901": {
+        "Inwoners": 27590.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0755": {
+        "Inwoners": 8620.0,
+        "Bijstandsontvangers": 100.0,
+        "Bijstandsdichtheid": 11.0
+    },
+    "GM0009": {
+        "Inwoners": 5960.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM1681": {
+        "Inwoners": 21730.0,
+        "Bijstandsontvangers": 570.0,
+        "Bijstandsdichtheid": 26.0
+    },
+    "GM0147": {
+        "Inwoners": 18770.0,
+        "Bijstandsontvangers": 410.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0654": {
+        "Inwoners": 18680.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0756": {
+        "Inwoners": 24440.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM0757": {
+        "Inwoners": 25660.0,
+        "Bijstandsontvangers": 510.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0758": {
+        "Inwoners": 153260.0,
+        "Bijstandsontvangers": 5650.0,
+        "Bijstandsdichtheid": 37.0
+    },
+    "GM0501": {
+        "Inwoners": 14430.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM1876": {
+        "Inwoners": 31080.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0213": {
+        "Inwoners": 17870.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 20.0
+    },
+    "GM0899": {
+        "Inwoners": 24640.0,
+        "Bijstandsontvangers": 1080.0,
+        "Bijstandsdichtheid": 43.5
+    },
+    "GM0312": {
+        "Inwoners": 12400.0,
+        "Bijstandsontvangers": 150.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0313": {
+        "Inwoners": 16870.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0214": {
+        "Inwoners": 22000.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0502": {
+        "Inwoners": 55460.0,
+        "Bijstandsontvangers": 2720.0,
+        "Bijstandsdichtheid": 49.0
+    },
+    "GM0383": {
+        "Inwoners": 29970.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0109": {
+        "Inwoners": 29810.0,
+        "Bijstandsontvangers": 1000.0,
+        "Bijstandsdichtheid": 33.5
+    },
+    "GM1706": {
+        "Inwoners": 17630.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0611": {
+        "Inwoners": 10900.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM1684": {
+        "Inwoners": 20840.0,
+        "Bijstandsontvangers": 550.0,
+        "Bijstandsdichtheid": 26.5
+    },
+    "GM0216": {
+        "Inwoners": 22990.0,
+        "Bijstandsontvangers": 780.0,
+        "Bijstandsdichtheid": 34.0
+    },
+    "GM0148": {
+        "Inwoners": 23110.0,
+        "Bijstandsontvangers": 290.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM1891": {
+        "Inwoners": 15740.0,
+        "Bijstandsontvangers": 550.0,
+        "Bijstandsdichtheid": 35.0
+    },
+    "GM0503": {
+        "Inwoners": 88560.0,
+        "Bijstandsontvangers": 3730.0,
+        "Bijstandsdichtheid": 42.0
+    },
+    "GM0010": {
+        "Inwoners": 21390.0,
+        "Bijstandsontvangers": 1120.0,
+        "Bijstandsdichtheid": 52.5
+    },
+    "GM0762": {
+        "Inwoners": 27060.0,
+        "Bijstandsontvangers": 500.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0150": {
+        "Inwoners": 82300.0,
+        "Bijstandsontvangers": 3510.0,
+        "Bijstandsdichtheid": 42.5
+    },
+    "GM0384": {
+        "Inwoners": 23140.0,
+        "Bijstandsontvangers": 630.0,
+        "Bijstandsdichtheid": 27.0
+    },
+    "GM1774": {
+        "Inwoners": 21950.0,
+        "Bijstandsontvangers": 240.0,
+        "Bijstandsdichtheid": 11.0
+    },
+    "GM0221": {
+        "Inwoners": 9750.0,
+        "Bijstandsontvangers": 390.0,
+        "Bijstandsdichtheid": 40.0
+    },
+    "GM0222": {
+        "Inwoners": 47850.0,
+        "Bijstandsontvangers": 1460.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0766": {
+        "Inwoners": 21530.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0058": {
+        "Inwoners": 19720.0,
+        "Bijstandsontvangers": 710.0,
+        "Bijstandsdichtheid": 36.0
+    },
+    "GM0505": {
+        "Inwoners": 99520.0,
+        "Bijstandsontvangers": 4900.0,
+        "Bijstandsdichtheid": 49.0
+    },
+    "GM0498": {
+        "Inwoners": 16140.0,
+        "Bijstandsontvangers": 190.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM1719": {
+        "Inwoners": 22900.0,
+        "Bijstandsontvangers": 220.0,
+        "Bijstandsdichtheid": 9.5
+    },
+    "GM0303": {
+        "Inwoners": 33670.0,
+        "Bijstandsontvangers": 820.0,
+        "Bijstandsdichtheid": 24.5
+    },
+    "GM0225": {
+        "Inwoners": 15540.0,
+        "Bijstandsontvangers": 340.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0226": {
+        "Inwoners": 21390.0,
+        "Bijstandsontvangers": 520.0,
+        "Bijstandsdichtheid": 24.5
+    },
+    "GM1711": {
+        "Inwoners": 27760.0,
+        "Bijstandsontvangers": 570.0,
+        "Bijstandsdichtheid": 20.5
+    },
+    "GM0385": {
+        "Inwoners": 29730.0,
+        "Bijstandsontvangers": 380.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0228": {
+        "Inwoners": 92670.0,
+        "Bijstandsontvangers": 2290.0,
+        "Bijstandsdichtheid": 24.5
+    },
+    "GM0317": {
+        "Inwoners": 7480.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM1651": {
+        "Inwoners": 13210.0,
+        "Bijstandsontvangers": 500.0,
+        "Bijstandsdichtheid": 38.0
+    },
+    "GM0770": {
+        "Inwoners": 15740.0,
+        "Bijstandsontvangers": 190.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM1903": {
+        "Inwoners": 21900.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM0772": {
+        "Inwoners": 193660.0,
+        "Bijstandsontvangers": 8420.0,
+        "Bijstandsdichtheid": 43.5
+    },
+    "GM0230": {
+        "Inwoners": 18610.0,
+        "Bijstandsontvangers": 280.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0114": {
+        "Inwoners": 91200.0,
+        "Bijstandsontvangers": 4170.0,
+        "Bijstandsdichtheid": 46.0
+    },
+    "GM0388": {
+        "Inwoners": 15500.0,
+        "Bijstandsontvangers": 410.0,
+        "Bijstandsdichtheid": 26.5
+    },
+    "GM0153": {
+        "Inwoners": 133700.0,
+        "Bijstandsontvangers": 8790.0,
+        "Bijstandsdichtheid": 66.0
+    },
+    "GM0232": {
+        "Inwoners": 27630.0,
+        "Bijstandsontvangers": 510.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0233": {
+        "Inwoners": 22520.0,
+        "Bijstandsontvangers": 380.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM0777": {
+        "Inwoners": 35720.0,
+        "Bijstandsontvangers": 850.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM1722": {
+        "Inwoners": 7110.0,
+        "Bijstandsontvangers": 230.0,
+        "Bijstandsdichtheid": 32.0
+    },
+    "GM0070": {
+        "Inwoners": 16960.0,
+        "Bijstandsontvangers": 600.0,
+        "Bijstandsdichtheid": 35.5
+    },
+    "GM1940": {
+        "Inwoners": 42840.0,
+        "Bijstandsontvangers": 1090.0,
+        "Bijstandsdichtheid": 25.5
+    },
+    "GM0779": {
+        "Inwoners": 18010.0,
+        "Bijstandsontvangers": 370.0,
+        "Bijstandsdichtheid": 20.5
+    },
+    "GM0236": {
+        "Inwoners": 21870.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM1771": {
+        "Inwoners": 32930.0,
+        "Bijstandsontvangers": 880.0,
+        "Bijstandsdichtheid": 26.5
+    },
+    "GM1652": {
+        "Inwoners": 25030.0,
+        "Bijstandsontvangers": 460.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM0907": {
+        "Inwoners": 14490.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM0689": {
+        "Inwoners": 12070.0,
+        "Bijstandsontvangers": 130.0,
+        "Bijstandsdichtheid": 11.0
+    },
+    "GM0784": {
+        "Inwoners": 21910.0,
+        "Bijstandsontvangers": 530.0,
+        "Bijstandsdichtheid": 24.5
+    },
+    "GM1924": {
+        "Inwoners": 40560.0,
+        "Bijstandsontvangers": 520.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0664": {
+        "Inwoners": 31820.0,
+        "Bijstandsontvangers": 850.0,
+        "Bijstandsdichtheid": 27.0
+    },
+    "GM0785": {
+        "Inwoners": 19360.0,
+        "Bijstandsontvangers": 340.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM1942": {
+        "Inwoners": 46020.0,
+        "Bijstandsontvangers": 1000.0,
+        "Bijstandsdichtheid": 21.5
+    },
+    "GM0512": {
+        "Inwoners": 29810.0,
+        "Bijstandsontvangers": 990.0,
+        "Bijstandsdichtheid": 33.5
+    },
+    "GM0513": {
+        "Inwoners": 59380.0,
+        "Bijstandsontvangers": 2290.0,
+        "Bijstandsdichtheid": 38.5
+    },
+    "GM0786": {
+        "Inwoners": 10470.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0518": {
+        "Inwoners": 433510.0,
+        "Bijstandsontvangers": 31800.0,
+        "Bijstandsdichtheid": 73.5
+    },
+    "GM0014": {
+        "Inwoners": 177410.0,
+        "Bijstandsontvangers": 11580.0,
+        "Bijstandsdichtheid": 65.5
+    },
+    "GM0015": {
+        "Inwoners": 9930.0,
+        "Bijstandsontvangers": 190.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM1729": {
+        "Inwoners": 12720.0,
+        "Bijstandsontvangers": 190.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0158": {
+        "Inwoners": 20420.0,
+        "Bijstandsontvangers": 430.0,
+        "Bijstandsdichtheid": 21.5
+    },
+    "GM0788": {
+        "Inwoners": 11930.0,
+        "Bijstandsontvangers": 120.0,
+        "Bijstandsdichtheid": 9.5
+    },
+    "GM0392": {
+        "Inwoners": 132220.0,
+        "Bijstandsontvangers": 4250.0,
+        "Bijstandsdichtheid": 32.0
+    },
+    "GM0393": {
+        "Inwoners": 4790.0,
+        "Bijstandsontvangers": 70.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0394": {
+        "Inwoners": 119550.0,
+        "Bijstandsontvangers": 2390.0,
+        "Bijstandsdichtheid": 20.0
+    },
+    "GM1655": {
+        "Inwoners": 25180.0,
+        "Bijstandsontvangers": 550.0,
+        "Bijstandsdichtheid": 21.5
+    },
+    "GM0160": {
+        "Inwoners": 49150.0,
+        "Bijstandsontvangers": 1000.0,
+        "Bijstandsdichtheid": 20.5
+    },
+    "GM0243": {
+        "Inwoners": 37800.0,
+        "Bijstandsontvangers": 1090.0,
+        "Bijstandsdichtheid": 29.0
+    },
+    "GM0523": {
+        "Inwoners": 14350.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0017": {
+        "Inwoners": 16270.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0072": {
+        "Inwoners": 13310.0,
+        "Bijstandsontvangers": 630.0,
+        "Bijstandsdichtheid": 47.5
+    },
+    "GM0244": {
+        "Inwoners": 9880.0,
+        "Bijstandsontvangers": 150.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0396": {
+        "Inwoners": 33160.0,
+        "Bijstandsontvangers": 1020.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0397": {
+        "Inwoners": 22170.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0246": {
+        "Inwoners": 15540.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0074": {
+        "Inwoners": 41860.0,
+        "Bijstandsontvangers": 1600.0,
+        "Bijstandsdichtheid": 38.0
+    },
+    "GM0398": {
+        "Inwoners": 44640.0,
+        "Bijstandsontvangers": 970.0,
+        "Bijstandsdichtheid": 21.5
+    },
+    "GM0917": {
+        "Inwoners": 75990.0,
+        "Bijstandsontvangers": 5240.0,
+        "Bijstandsdichtheid": 69.0
+    },
+    "GM1658": {
+        "Inwoners": 13390.0,
+        "Bijstandsontvangers": 140.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM0399": {
+        "Inwoners": 19290.0,
+        "Bijstandsontvangers": 290.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0400": {
+        "Inwoners": 47760.0,
+        "Bijstandsontvangers": 2060.0,
+        "Bijstandsdichtheid": 43.0
+    },
+    "GM0163": {
+        "Inwoners": 29680.0,
+        "Bijstandsontvangers": 520.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0530": {
+        "Inwoners": 32660.0,
+        "Bijstandsontvangers": 1000.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0794": {
+        "Inwoners": 74570.0,
+        "Bijstandsontvangers": 3240.0,
+        "Bijstandsdichtheid": 43.5
+    },
+    "GM0531": {
+        "Inwoners": 23680.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0164": {
+        "Inwoners": 67600.0,
+        "Bijstandsontvangers": 2960.0,
+        "Bijstandsdichtheid": 44.0
+    },
+    "GM0796": {
+        "Inwoners": 127870.0,
+        "Bijstandsontvangers": 4710.0,
+        "Bijstandsdichtheid": 37.0
+    },
+    "GM0252": {
+        "Inwoners": 13960.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0797": {
+        "Inwoners": 36470.0,
+        "Bijstandsontvangers": 670.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0534": {
+        "Inwoners": 17940.0,
+        "Bijstandsontvangers": 280.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0798": {
+        "Inwoners": 12880.0,
+        "Bijstandsontvangers": 140.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM0402": {
+        "Inwoners": 73780.0,
+        "Bijstandsontvangers": 2380.0,
+        "Bijstandsdichtheid": 32.5
+    },
+    "GM1735": {
+        "Inwoners": 29570.0,
+        "Bijstandsontvangers": 500.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM1911": {
+        "Inwoners": 39790.0,
+        "Bijstandsontvangers": 640.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0118": {
+        "Inwoners": 45750.0,
+        "Bijstandsontvangers": 1510.0,
+        "Bijstandsdichtheid": 33.0
+    },
+    "GM0018": {
+        "Inwoners": 28950.0,
+        "Bijstandsontvangers": 1540.0,
+        "Bijstandsdichtheid": 53.0
+    },
+    "GM0405": {
+        "Inwoners": 60110.0,
+        "Bijstandsontvangers": 2050.0,
+        "Bijstandsdichtheid": 34.0
+    },
+    "GM1507": {
+        "Inwoners": 35640.0,
+        "Bijstandsontvangers": 480.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0321": {
+        "Inwoners": 39270.0,
+        "Bijstandsontvangers": 660.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0406": {
+        "Inwoners": 34730.0,
+        "Bijstandsontvangers": 1030.0,
+        "Bijstandsdichtheid": 29.5
+    },
+    "GM0677": {
+        "Inwoners": 23680.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0353": {
+        "Inwoners": 27870.0,
+        "Bijstandsontvangers": 650.0,
+        "Bijstandsdichtheid": 23.0
+    },
+    "GM1884": {
+        "Inwoners": 22130.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0166": {
+        "Inwoners": 41970.0,
+        "Bijstandsontvangers": 1000.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM0678": {
+        "Inwoners": 10250.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM0537": {
+        "Inwoners": 52240.0,
+        "Bijstandsontvangers": 1020.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0928": {
+        "Inwoners": 40230.0,
+        "Bijstandsontvangers": 2190.0,
+        "Bijstandsdichtheid": 54.5
+    },
+    "GM1598": {
+        "Inwoners": 18660.0,
+        "Bijstandsontvangers": 230.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0079": {
+        "Inwoners": 10590.0,
+        "Bijstandsontvangers": 340.0,
+        "Bijstandsdichtheid": 32.5
+    },
+    "GM0588": {
+        "Inwoners": 9070.0,
+        "Bijstandsontvangers": 80.0,
+        "Bijstandsdichtheid": 9.5
+    },
+    "GM0542": {
+        "Inwoners": 23990.0,
+        "Bijstandsontvangers": 610.0,
+        "Bijstandsdichtheid": 25.5
+    },
+    "GM1931": {
+        "Inwoners": 45810.0,
+        "Bijstandsontvangers": 800.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM1659": {
+        "Inwoners": 18450.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM1685": {
+        "Inwoners": 12840.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0882": {
+        "Inwoners": 32670.0,
+        "Bijstandsontvangers": 1270.0,
+        "Bijstandsdichtheid": 39.0
+    },
+    "GM0415": {
+        "Inwoners": 9380.0,
+        "Bijstandsontvangers": 120.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0416": {
+        "Inwoners": 22810.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM1621": {
+        "Inwoners": 46960.0,
+        "Bijstandsontvangers": 750.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0417": {
+        "Inwoners": 9330.0,
+        "Bijstandsontvangers": 120.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0022": {
+        "Inwoners": 16380.0,
+        "Bijstandsontvangers": 420.0,
+        "Bijstandsdichtheid": 26.0
+    },
+    "GM0545": {
+        "Inwoners": 17280.0,
+        "Bijstandsontvangers": 470.0,
+        "Bijstandsdichtheid": 27.5
+    },
+    "GM0080": {
+        "Inwoners": 92120.0,
+        "Bijstandsontvangers": 6410.0,
+        "Bijstandsdichtheid": 69.5
+    },
+    "GM0081": {
+        "Inwoners": 8530.0,
+        "Bijstandsontvangers": 180.0,
+        "Bijstandsdichtheid": 21.5
+    },
+    "GM0546": {
+        "Inwoners": 106960.0,
+        "Bijstandsontvangers": 4130.0,
+        "Bijstandsdichtheid": 38.5
+    },
+    "GM0547": {
+        "Inwoners": 22670.0,
+        "Bijstandsontvangers": 510.0,
+        "Bijstandsdichtheid": 22.5
+    },
+    "GM1916": {
+        "Inwoners": 62490.0,
+        "Bijstandsontvangers": 2350.0,
+        "Bijstandsdichtheid": 37.5
+    },
+    "GM0995": {
+        "Inwoners": 62510.0,
+        "Bijstandsontvangers": 2890.0,
+        "Bijstandsdichtheid": 46.0
+    },
+    "GM1640": {
+        "Inwoners": 30970.0,
+        "Bijstandsontvangers": 470.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0327": {
+        "Inwoners": 24580.0,
+        "Bijstandsontvangers": 380.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0733": {
+        "Inwoners": 9230.0,
+        "Bijstandsontvangers": 130.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM1705": {
+        "Inwoners": 38330.0,
+        "Bijstandsontvangers": 570.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0553": {
+        "Inwoners": 19090.0,
+        "Bijstandsontvangers": 300.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0140": {
+        "Inwoners": 8800.0,
+        "Bijstandsontvangers": 160.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0262": {
+        "Inwoners": 28590.0,
+        "Bijstandsontvangers": 530.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0809": {
+        "Inwoners": 19550.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0331": {
+        "Inwoners": 11660.0,
+        "Bijstandsontvangers": 150.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0024": {
+        "Inwoners": 8310.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 30.0
+    },
+    "GM0168": {
+        "Inwoners": 18950.0,
+        "Bijstandsontvangers": 460.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM0263": {
+        "Inwoners": 20200.0,
+        "Bijstandsontvangers": 270.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM1641": {
+        "Inwoners": 20880.0,
+        "Bijstandsontvangers": 370.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0556": {
+        "Inwoners": 27290.0,
+        "Bijstandsontvangers": 1170.0,
+        "Bijstandsdichtheid": 42.5
+    },
+    "GM0935": {
+        "Inwoners": 109550.0,
+        "Bijstandsontvangers": 4530.0,
+        "Bijstandsdichtheid": 41.5
+    },
+    "GM1663": {
+        "Inwoners": 8520.0,
+        "Bijstandsontvangers": 300.0,
+        "Bijstandsdichtheid": 35.5
+    },
+    "GM0025": {
+        "Inwoners": 8720.0,
+        "Bijstandsontvangers": 190.0,
+        "Bijstandsdichtheid": 21.0
+    },
+    "GM0420": {
+        "Inwoners": 36560.0,
+        "Bijstandsontvangers": 590.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0938": {
+        "Inwoners": 16540.0,
+        "Bijstandsontvangers": 280.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM1908": {
+        "Inwoners": 11120.0,
+        "Bijstandsontvangers": 240.0,
+        "Bijstandsdichtheid": 21.5
+    },
+    "GM1987": {
+        "Inwoners": 10360.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 38.5
+    },
+    "GM0119": {
+        "Inwoners": 27340.0,
+        "Bijstandsontvangers": 840.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0687": {
+        "Inwoners": 40250.0,
+        "Bijstandsontvangers": 1660.0,
+        "Bijstandsdichtheid": 41.0
+    },
+    "GM1842": {
+        "Inwoners": 15690.0,
+        "Bijstandsontvangers": 160.0,
+        "Bijstandsdichtheid": 10.0
+    },
+    "GM1731": {
+        "Inwoners": 28250.0,
+        "Bijstandsontvangers": 560.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0815": {
+        "Inwoners": 9220.0,
+        "Bijstandsontvangers": 140.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM1709": {
+        "Inwoners": 31080.0,
+        "Bijstandsontvangers": 590.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM1927": {
+        "Inwoners": 23210.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM1955": {
+        "Inwoners": 30270.0,
+        "Bijstandsontvangers": 570.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0335": {
+        "Inwoners": 11250.0,
+        "Bijstandsontvangers": 130.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM0944": {
+        "Inwoners": 6700.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM1740": {
+        "Inwoners": 18440.0,
+        "Bijstandsontvangers": 320.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0946": {
+        "Inwoners": 14480.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0304": {
+        "Inwoners": 9960.0,
+        "Bijstandsontvangers": 150.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0356": {
+        "Inwoners": 52050.0,
+        "Bijstandsontvangers": 1550.0,
+        "Bijstandsdichtheid": 30.0
+    },
+    "GM0569": {
+        "Inwoners": 23440.0,
+        "Bijstandsontvangers": 320.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0267": {
+        "Inwoners": 33840.0,
+        "Bijstandsontvangers": 540.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0268": {
+        "Inwoners": 149550.0,
+        "Bijstandsontvangers": 8580.0,
+        "Bijstandsdichtheid": 57.5
+    },
+    "GM1930": {
+        "Inwoners": 72180.0,
+        "Bijstandsontvangers": 2670.0,
+        "Bijstandsdichtheid": 37.0
+    },
+    "GM1695": {
+        "Inwoners": 6400.0,
+        "Bijstandsontvangers": 120.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM1699": {
+        "Inwoners": 27300.0,
+        "Bijstandsontvangers": 680.0,
+        "Bijstandsdichtheid": 25.0
+    },
+    "GM0171": {
+        "Inwoners": 37640.0,
+        "Bijstandsontvangers": 1110.0,
+        "Bijstandsdichtheid": 29.5
+    },
+    "GM0575": {
+        "Inwoners": 22020.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0576": {
+        "Inwoners": 13810.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0820": {
+        "Inwoners": 19400.0,
+        "Bijstandsontvangers": 430.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0302": {
+        "Inwoners": 21940.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM0951": {
+        "Inwoners": 13340.0,
+        "Bijstandsontvangers": 230.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0579": {
+        "Inwoners": 19320.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0823": {
+        "Inwoners": 15690.0,
+        "Bijstandsontvangers": 160.0,
+        "Bijstandsdichtheid": 10.0
+    },
+    "GM0824": {
+        "Inwoners": 21980.0,
+        "Bijstandsontvangers": 300.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM1895": {
+        "Inwoners": 32610.0,
+        "Bijstandsontvangers": 1660.0,
+        "Bijstandsdichtheid": 51.0
+    },
+    "GM0269": {
+        "Inwoners": 19000.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM0173": {
+        "Inwoners": 26540.0,
+        "Bijstandsontvangers": 710.0,
+        "Bijstandsdichtheid": 27.0
+    },
+    "GM1773": {
+        "Inwoners": 15050.0,
+        "Bijstandsontvangers": 230.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0175": {
+        "Inwoners": 14520.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0881": {
+        "Inwoners": 6830.0,
+        "Bijstandsontvangers": 180.0,
+        "Bijstandsdichtheid": 27.0
+    },
+    "GM1586": {
+        "Inwoners": 24910.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0826": {
+        "Inwoners": 46150.0,
+        "Bijstandsontvangers": 1270.0,
+        "Bijstandsdichtheid": 27.5
+    },
+    "GM0085": {
+        "Inwoners": 21650.0,
+        "Bijstandsontvangers": 660.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0431": {
+        "Inwoners": 8090.0,
+        "Bijstandsontvangers": 120.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0432": {
+        "Inwoners": 9540.0,
+        "Bijstandsontvangers": 130.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0086": {
+        "Inwoners": 24690.0,
+        "Bijstandsontvangers": 680.0,
+        "Bijstandsdichtheid": 27.5
+    },
+    "GM0828": {
+        "Inwoners": 76170.0,
+        "Bijstandsontvangers": 2000.0,
+        "Bijstandsdichtheid": 26.5
+    },
+    "GM0584": {
+        "Inwoners": 19800.0,
+        "Bijstandsontvangers": 320.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM1509": {
+        "Inwoners": 33500.0,
+        "Bijstandsontvangers": 810.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM0437": {
+        "Inwoners": 11050.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0589": {
+        "Inwoners": 8400.0,
+        "Bijstandsontvangers": 100.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM1734": {
+        "Inwoners": 38750.0,
+        "Bijstandsontvangers": 660.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0590": {
+        "Inwoners": 26910.0,
+        "Bijstandsontvangers": 660.0,
+        "Bijstandsdichtheid": 24.5
+    },
+    "GM1894": {
+        "Inwoners": 36860.0,
+        "Bijstandsontvangers": 470.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0765": {
+        "Inwoners": 10610.0,
+        "Bijstandsontvangers": 530.0,
+        "Bijstandsdichtheid": 50.0
+    },
+    "GM1926": {
+        "Inwoners": 41680.0,
+        "Bijstandsontvangers": 580.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0439": {
+        "Inwoners": 67750.0,
+        "Bijstandsontvangers": 2070.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0273": {
+        "Inwoners": 20080.0,
+        "Bijstandsontvangers": 290.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0177": {
+        "Inwoners": 30890.0,
+        "Bijstandsontvangers": 450.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0703": {
+        "Inwoners": 17590.0,
+        "Bijstandsontvangers": 280.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0274": {
+        "Inwoners": 26690.0,
+        "Bijstandsontvangers": 700.0,
+        "Bijstandsdichtheid": 26.0
+    },
+    "GM0339": {
+        "Inwoners": 3970.0,
+        "Bijstandsontvangers": 40.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM1667": {
+        "Inwoners": 10770.0,
+        "Bijstandsontvangers": 110.0,
+        "Bijstandsdichtheid": 10.5
+    },
+    "GM0275": {
+        "Inwoners": 37440.0,
+        "Bijstandsontvangers": 1190.0,
+        "Bijstandsdichtheid": 32.0
+    },
+    "GM0340": {
+        "Inwoners": 15970.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0597": {
+        "Inwoners": 38750.0,
+        "Bijstandsontvangers": 970.0,
+        "Bijstandsdichtheid": 25.0
+    },
+    "GM0196": {
+        "Inwoners": 9190.0,
+        "Bijstandsontvangers": 290.0,
+        "Bijstandsdichtheid": 31.0
+    },
+    "GM1742": {
+        "Inwoners": 30150.0,
+        "Bijstandsontvangers": 520.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0603": {
+        "Inwoners": 43240.0,
+        "Bijstandsontvangers": 1730.0,
+        "Bijstandsdichtheid": 40.0
+    },
+    "GM1669": {
+        "Inwoners": 18000.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 20.0
+    },
+    "GM0957": {
+        "Inwoners": 48840.0,
+        "Bijstandsontvangers": 2330.0,
+        "Bijstandsdichtheid": 48.0
+    },
+    "GM0736": {
+        "Inwoners": 35890.0,
+        "Bijstandsontvangers": 540.0,
+        "Bijstandsdichtheid": 15.0
+    },
+    "GM1674": {
+        "Inwoners": 65120.0,
+        "Bijstandsontvangers": 2340.0,
+        "Bijstandsdichtheid": 36.0
+    },
+    "GM0599": {
+        "Inwoners": 531760.0,
+        "Bijstandsontvangers": 47620.0,
+        "Bijstandsdichtheid": 89.5
+    },
+    "GM0277": {
+        "Inwoners": 1250.0,
+        "Bijstandsontvangers": 10.0,
+        "Bijstandsdichtheid": 5.0
+    },
+    "GM0840": {
+        "Inwoners": 19520.0,
+        "Bijstandsontvangers": 390.0,
+        "Bijstandsdichtheid": 20.0
+    },
+    "GM0441": {
+        "Inwoners": 38870.0,
+        "Bijstandsontvangers": 650.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0279": {
+        "Inwoners": 7780.0,
+        "Bijstandsontvangers": 90.0,
+        "Bijstandsdichtheid": 11.0
+    },
+    "GM0606": {
+        "Inwoners": 65300.0,
+        "Bijstandsontvangers": 3320.0,
+        "Bijstandsdichtheid": 51.0
+    },
+    "GM0088": {
+        "Inwoners": 830.0,
+        "Bijstandsontvangers": 10.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0844": {
+        "Inwoners": 19930.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0962": {
+        "Inwoners": 11200.0,
+        "Bijstandsontvangers": 210.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM1676": {
+        "Inwoners": 28960.0,
+        "Bijstandsontvangers": 560.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0965": {
+        "Inwoners": 9180.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM1702": {
+        "Inwoners": 9860.0,
+        "Bijstandsontvangers": 100.0,
+        "Bijstandsdichtheid": 10.0
+    },
+    "GM0845": {
+        "Inwoners": 23830.0,
+        "Bijstandsontvangers": 300.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0846": {
+        "Inwoners": 15030.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM1883": {
+        "Inwoners": 81280.0,
+        "Bijstandsontvangers": 3360.0,
+        "Bijstandsdichtheid": 41.5
+    },
+    "GM0610": {
+        "Inwoners": 20450.0,
+        "Bijstandsontvangers": 590.0,
+        "Bijstandsdichtheid": 29.0
+    },
+    "GM0040": {
+        "Inwoners": 13060.0,
+        "Bijstandsontvangers": 280.0,
+        "Bijstandsdichtheid": 21.0
+    },
+    "GM1714": {
+        "Inwoners": 20610.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0090": {
+        "Inwoners": 46300.0,
+        "Bijstandsontvangers": 2180.0,
+        "Bijstandsdichtheid": 47.0
+    },
+    "GM0342": {
+        "Inwoners": 38170.0,
+        "Bijstandsontvangers": 950.0,
+        "Bijstandsdichtheid": 25.0
+    },
+    "GM0847": {
+        "Inwoners": 16210.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0848": {
+        "Inwoners": 13750.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0037": {
+        "Inwoners": 27440.0,
+        "Bijstandsontvangers": 1150.0,
+        "Bijstandsdichtheid": 42.0
+    },
+    "GM0180": {
+        "Inwoners": 12850.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0532": {
+        "Inwoners": 17910.0,
+        "Bijstandsontvangers": 340.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0851": {
+        "Inwoners": 20540.0,
+        "Bijstandsontvangers": 410.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM1708": {
+        "Inwoners": 36360.0,
+        "Bijstandsontvangers": 940.0,
+        "Bijstandsdichtheid": 26.0
+    },
+    "GM0971": {
+        "Inwoners": 21870.0,
+        "Bijstandsontvangers": 390.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM1904": {
+        "Inwoners": 53280.0,
+        "Bijstandsontvangers": 1010.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0617": {
+        "Inwoners": 7610.0,
+        "Bijstandsontvangers": 100.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM1900": {
+        "Inwoners": 69850.0,
+        "Bijstandsontvangers": 2590.0,
+        "Bijstandsdichtheid": 37.0
+    },
+    "GM0715": {
+        "Inwoners": 46590.0,
+        "Bijstandsontvangers": 1350.0,
+        "Bijstandsdichtheid": 29.0
+    },
+    "GM0093": {
+        "Inwoners": 4270.0,
+        "Bijstandsontvangers": 20.0,
+        "Bijstandsdichtheid": 5.5
+    },
+    "GM0448": {
+        "Inwoners": 11650.0,
+        "Bijstandsontvangers": 150.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM1525": {
+        "Inwoners": 29970.0,
+        "Bijstandsontvangers": 360.0,
+        "Bijstandsdichtheid": 12.0
+    },
+    "GM0716": {
+        "Inwoners": 20770.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0281": {
+        "Inwoners": 34490.0,
+        "Bijstandsontvangers": 1600.0,
+        "Bijstandsdichtheid": 46.5
+    },
+    "GM0855": {
+        "Inwoners": 181100.0,
+        "Bijstandsontvangers": 8490.0,
+        "Bijstandsdichtheid": 47.0
+    },
+    "GM0183": {
+        "Inwoners": 17400.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 9.5
+    },
+    "GM1700": {
+        "Inwoners": 27330.0,
+        "Bijstandsontvangers": 630.0,
+        "Bijstandsdichtheid": 23.0
+    },
+    "GM1730": {
+        "Inwoners": 27580.0,
+        "Bijstandsontvangers": 480.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0737": {
+        "Inwoners": 26510.0,
+        "Bijstandsontvangers": 580.0,
+        "Bijstandsdichtheid": 22.0
+    },
+    "GM0856": {
+        "Inwoners": 34660.0,
+        "Bijstandsontvangers": 830.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM0450": {
+        "Inwoners": 11090.0,
+        "Bijstandsontvangers": 160.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0451": {
+        "Inwoners": 24240.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM0184": {
+        "Inwoners": 14400.0,
+        "Bijstandsontvangers": 160.0,
+        "Bijstandsdichtheid": 11.0
+    },
+    "GM0344": {
+        "Inwoners": 283730.0,
+        "Bijstandsontvangers": 12660.0,
+        "Bijstandsdichtheid": 44.5
+    },
+    "GM1581": {
+        "Inwoners": 41170.0,
+        "Bijstandsontvangers": 780.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0981": {
+        "Inwoners": 8670.0,
+        "Bijstandsontvangers": 400.0,
+        "Bijstandsdichtheid": 46.0
+    },
+    "GM0994": {
+        "Inwoners": 14550.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 24.0
+    },
+    "GM0858": {
+        "Inwoners": 26310.0,
+        "Bijstandsontvangers": 610.0,
+        "Bijstandsdichtheid": 23.0
+    },
+    "GM0047": {
+        "Inwoners": 23260.0,
+        "Bijstandsontvangers": 1100.0,
+        "Bijstandsdichtheid": 47.0
+    },
+    "GM0345": {
+        "Inwoners": 52150.0,
+        "Bijstandsontvangers": 1770.0,
+        "Bijstandsdichtheid": 34.0
+    },
+    "GM0717": {
+        "Inwoners": 18570.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0860": {
+        "Inwoners": 31960.0,
+        "Bijstandsontvangers": 590.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0861": {
+        "Inwoners": 37760.0,
+        "Bijstandsontvangers": 680.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM0453": {
+        "Inwoners": 57170.0,
+        "Bijstandsontvangers": 1600.0,
+        "Bijstandsdichtheid": 28.0
+    },
+    "GM0983": {
+        "Inwoners": 86100.0,
+        "Bijstandsontvangers": 3820.0,
+        "Bijstandsdichtheid": 44.5
+    },
+    "GM0984": {
+        "Inwoners": 36860.0,
+        "Bijstandsontvangers": 970.0,
+        "Bijstandsdichtheid": 26.0
+    },
+    "GM0620": {
+        "Inwoners": 16360.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 21.0
+    },
+    "GM0622": {
+        "Inwoners": 60510.0,
+        "Bijstandsontvangers": 3060.0,
+        "Bijstandsdichtheid": 50.5
+    },
+    "GM0048": {
+        "Inwoners": 13690.0,
+        "Bijstandsontvangers": 380.0,
+        "Bijstandsdichtheid": 27.5
+    },
+    "GM0096": {
+        "Inwoners": 950.0,
+        "Bijstandsontvangers": 10.0,
+        "Bijstandsdichtheid": 11.5
+    },
+    "GM0718": {
+        "Inwoners": 37810.0,
+        "Bijstandsontvangers": 2210.0,
+        "Bijstandsdichtheid": 58.5
+    },
+    "GM0986": {
+        "Inwoners": 10770.0,
+        "Bijstandsontvangers": 140.0,
+        "Bijstandsdichtheid": 13.0
+    },
+    "GM0626": {
+        "Inwoners": 20790.0,
+        "Bijstandsontvangers": 390.0,
+        "Bijstandsdichtheid": 19.0
+    },
+    "GM0285": {
+        "Inwoners": 20370.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0865": {
+        "Inwoners": 21680.0,
+        "Bijstandsontvangers": 340.0,
+        "Bijstandsdichtheid": 15.5
+    },
+    "GM0866": {
+        "Inwoners": 14030.0,
+        "Bijstandsontvangers": 240.0,
+        "Bijstandsdichtheid": 17.0
+    },
+    "GM0867": {
+        "Inwoners": 40080.0,
+        "Bijstandsontvangers": 940.0,
+        "Bijstandsdichtheid": 23.5
+    },
+    "GM0627": {
+        "Inwoners": 22010.0,
+        "Bijstandsontvangers": 430.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0289": {
+        "Inwoners": 33640.0,
+        "Bijstandsontvangers": 860.0,
+        "Bijstandsdichtheid": 25.5
+    },
+    "GM0629": {
+        "Inwoners": 21570.0,
+        "Bijstandsontvangers": 490.0,
+        "Bijstandsdichtheid": 23.0
+    },
+    "GM0852": {
+        "Inwoners": 14490.0,
+        "Bijstandsontvangers": 180.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0988": {
+        "Inwoners": 42450.0,
+        "Bijstandsontvangers": 1220.0,
+        "Bijstandsdichtheid": 29.0
+    },
+    "GM0457": {
+        "Inwoners": 15680.0,
+        "Bijstandsontvangers": 500.0,
+        "Bijstandsdichtheid": 32.0
+    },
+    "GM0870": {
+        "Inwoners": 22000.0,
+        "Bijstandsontvangers": 320.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0668": {
+        "Inwoners": 16000.0,
+        "Bijstandsontvangers": 270.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM1701": {
+        "Inwoners": 16440.0,
+        "Bijstandsontvangers": 260.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0293": {
+        "Inwoners": 12720.0,
+        "Bijstandsontvangers": 460.0,
+        "Bijstandsdichtheid": 36.5
+    },
+    "GM1783": {
+        "Inwoners": 87930.0,
+        "Bijstandsontvangers": 1530.0,
+        "Bijstandsdichtheid": 17.5
+    },
+    "GM0098": {
+        "Inwoners": 21620.0,
+        "Bijstandsontvangers": 610.0,
+        "Bijstandsdichtheid": 28.5
+    },
+    "GM0614": {
+        "Inwoners": 12340.0,
+        "Bijstandsontvangers": 150.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0189": {
+        "Inwoners": 19850.0,
+        "Bijstandsontvangers": 270.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0296": {
+        "Inwoners": 34100.0,
+        "Bijstandsontvangers": 850.0,
+        "Bijstandsdichtheid": 25.0
+    },
+    "GM1696": {
+        "Inwoners": 19800.0,
+        "Bijstandsontvangers": 270.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0352": {
+        "Inwoners": 19580.0,
+        "Bijstandsontvangers": 310.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM0053": {
+        "Inwoners": 11210.0,
+        "Bijstandsontvangers": 300.0,
+        "Bijstandsdichtheid": 26.5
+    },
+    "GM0294": {
+        "Inwoners": 24430.0,
+        "Bijstandsontvangers": 730.0,
+        "Bijstandsdichtheid": 30.0
+    },
+    "GM0873": {
+        "Inwoners": 18670.0,
+        "Bijstandsontvangers": 350.0,
+        "Bijstandsdichtheid": 18.5
+    },
+    "GM0632": {
+        "Inwoners": 42000.0,
+        "Bijstandsontvangers": 690.0,
+        "Bijstandsdichtheid": 16.5
+    },
+    "GM1690": {
+        "Inwoners": 20050.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 12.5
+    },
+    "GM0880": {
+        "Inwoners": 13510.0,
+        "Bijstandsontvangers": 240.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM0351": {
+        "Inwoners": 10140.0,
+        "Bijstandsontvangers": 140.0,
+        "Bijstandsdichtheid": 14.0
+    },
+    "GM0874": {
+        "Inwoners": 12050.0,
+        "Bijstandsontvangers": 170.0,
+        "Bijstandsdichtheid": 14.5
+    },
+    "GM0479": {
+        "Inwoners": 127730.0,
+        "Bijstandsontvangers": 4860.0,
+        "Bijstandsdichtheid": 38.0
+    },
+    "GM0297": {
+        "Inwoners": 22360.0,
+        "Bijstandsontvangers": 430.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0473": {
+        "Inwoners": 14680.0,
+        "Bijstandsontvangers": 450.0,
+        "Bijstandsdichtheid": 30.5
+    },
+    "GM0707": {
+        "Inwoners": 11270.0,
+        "Bijstandsontvangers": 130.0,
+        "Bijstandsdichtheid": 11.0
+    },
+    "GM0050": {
+        "Inwoners": 18200.0,
+        "Bijstandsontvangers": 330.0,
+        "Bijstandsdichtheid": 18.0
+    },
+    "GM0355": {
+        "Inwoners": 51700.0,
+        "Bijstandsontvangers": 1650.0,
+        "Bijstandsdichtheid": 32.0
+    },
+    "GM0299": {
+        "Inwoners": 27490.0,
+        "Bijstandsontvangers": 760.0,
+        "Bijstandsdichtheid": 27.5
+    },
+    "GM0637": {
+        "Inwoners": 103400.0,
+        "Bijstandsontvangers": 4090.0,
+        "Bijstandsdichtheid": 39.5
+    },
+    "GM0638": {
+        "Inwoners": 7070.0,
+        "Bijstandsontvangers": 70.0,
+        "Bijstandsdichtheid": 9.5
+    },
+    "GM0056": {
+        "Inwoners": 15180.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 16.0
+    },
+    "GM1892": {
+        "Inwoners": 34110.0,
+        "Bijstandsontvangers": 660.0,
+        "Bijstandsdichtheid": 19.5
+    },
+    "GM0879": {
+        "Inwoners": 18760.0,
+        "Bijstandsontvangers": 250.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0301": {
+        "Inwoners": 39690.0,
+        "Bijstandsontvangers": 1780.0,
+        "Bijstandsdichtheid": 45.0
+    },
+    "GM1896": {
+        "Inwoners": 17590.0,
+        "Bijstandsontvangers": 240.0,
+        "Bijstandsdichtheid": 13.5
+    },
+    "GM0642": {
+        "Inwoners": 37190.0,
+        "Bijstandsontvangers": 1330.0,
+        "Bijstandsdichtheid": 36.0
+    },
+    "GM0193": {
+        "Inwoners": 102570.0,
+        "Bijstandsontvangers": 4040.0,
+        "Bijstandsdichtheid": 39.5
+    }
+}
