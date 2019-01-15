@@ -4,32 +4,34 @@
 
 // source map: https://cartomap.github.io/nl/wgs84/gemeente_2017.geojson
 
-function add_legend(svg) {
+function add_legend(svg, sort) {
   // define size of svg
-  var w = 200;
-  var h = 220;
-  //
-  // // create svg
-  // var svg = d3.select("body")
-  //             .append("svg")
-  //             .attr("width", w)
-  //             .attr("height", h)
-  //             .attr("class", "svg");
+  var w, h, values, colors;
 
-  var values = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
-  var colors = ['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)'];
+  if (sort == "map") {
+    w = 150;
+    h = 220;
+    values = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
+    colors = ['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)'];
+  } else {
+    w = 200;
+    h = 310;
+    // source: https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/
+    values = ["WAO","Wajong","WAZ","IVA","WGA","Werkloosheidsuitkering","IOW","Bijstand","IOAW","IOAZ","AOW","ANW","AKW"];
+    colors = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#800000', '#008080', '#e6beff', '#9a6324'];
+  }
 
   // add background legend
   svg.append("rect")
-     .attr("x", 650)
+     .attr("x", 800 - w)
      .attr("y", 0)
-     .attr("width", 150)
-     .attr("height", 220)
+     .attr("width", w)
+     .attr("height", h)
      .attr("class", "legend");
 
   // add title legend
   svg.append("text")
-     .attr("x", 725)
+     .attr("x", 800 - w + w / 2)
      .attr("y", 18)
      .attr("class", "titles")
      .style("text-anchor", "middle")
@@ -39,7 +41,7 @@ function add_legend(svg) {
   svg.selectAll("rect_leg")
      .data(colors)
      .enter().append("rect")
-     .attr("x", 655)
+     .attr("x", 800 - w + 5)
      .attr("y", function(d, i) {
        return 20 + i * 22;
      })
@@ -53,7 +55,7 @@ function add_legend(svg) {
   svg.selectAll("leg_text")
      .data(values)
      .enter().append("text")
-     .attr("x", 680)
+     .attr("x", 800 - w + 30)
      .attr("y", function(d, i) {
        return 37 + i * 22;
      })
@@ -76,8 +78,8 @@ function create_map(svg, margin, width, height, response, year=2017) {
 
 // source colorscheme: http://colorbrewer2.org/?type=sequential&scheme=Greens&n=9
   var color = d3.scaleLinear()
-      .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
-      .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+                .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
+                .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
   // path = d3.geoPath();
 
   var projection = d3.geoMercator()
@@ -152,5 +154,10 @@ function create_map(svg, margin, width, height, response, year=2017) {
      .attr("class", "names")
      .attr("d", path);
 
+  return 0;
+}
+
+function update_map() {
+  // console.log("joe");
   return 0;
 }

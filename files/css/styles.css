@@ -28,10 +28,13 @@ ul, ol, h4, h6, p, .datatext {
   margin-right: 10px;
   text-align: justify;
 }
-.title_bar {
+.title_line {
   text-align: center;
 }
 .title_map {
+  text-align: center;
+}
+.title_pie {
   text-align: center;
 }
 .svg {
