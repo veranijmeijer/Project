@@ -36,3 +36,12 @@ To do morgen:
 * Indeling visualisaties maken
 * Beginnen aan linechart
 * Oplossing bedenken voor gefuseerde gemeentes tussen 2015 en 2017
+
+# Dag 5 (din 15 jan)
+* Indeling visualisaties gemaakt
+* Linechart gemaakt
+* Piechart gemaakt (voor 1 jaar)
+
+To do morgen:
+* Interactie tussen verschillende visualisaties
+* Tooltip piechart
