@@ -45,3 +45,14 @@ To do morgen:
 To do morgen:
 * Interactie tussen verschillende visualisaties
 * Tooltip piechart
+
+# Dag 6 (woe 16 jan)
+* Tooltip aan piechart toegevoegd
+* Piechart wordt geupdate na klikken op linechart
+* Map wordt geupdate na klikken op linechart
+
+To do morgen:
+* Zorgen dat er een berichtje bij komt wanneer 1998-2014 wordt aangeklikt (-> geen data beschikbaar van die jaren voor de map)
+* Radio buttons toevoegen aan kaart
+* Bootstrap grid
+* Dropdown menu of slider om jaren te kiezen
