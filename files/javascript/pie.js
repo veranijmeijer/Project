@@ -12,8 +12,10 @@ function create_pie(svg, margin, width, height, response, year=2017) {
               .attr('class', 'd3-tip')
               .offset([-10, 0])
               .html(function(d) {
-                  return "<strong>" + d.properties.statnaam + "</strong><span class='details'>" + format(d.bijstand) + "</span>";
+                  return "<strong>" + d.data.name + ": </strong><span class='details'>" + format(d.data.number) + "</span>";
               });
+
+  svg.call(tip);
 
   var details = []
   for (var key in security) {
@@ -26,8 +28,6 @@ function create_pie(svg, margin, width, height, response, year=2017) {
     }
   }
 
-  console.log(details);
-
   // source: https://www.youtube.com/watch?v=P8KNr0pDqio
   var data = d3.pie()
                .sort(null)
@@ -35,25 +35,82 @@ function create_pie(svg, margin, width, height, response, year=2017) {
                  return d.number;
                })(details);
 
-  console.log(data);
-
   var segments = d3.arc()
                    .innerRadius(0)
-                   .outerRadius(200)
-                   // .padAngle(.05)
-                   .padRadius(50);
-
-  console.log(segments);
+                   .outerRadius(250);
 
   var sections = svg.append("g")
-                   .attr("transform", "translate(275, 250)")
+                    .attr("class", "sec")
+                   .attr("transform", "translate(300, 300)")
                     .selectAll("path")
                     .data(data);
 
   sections.enter()
           .append("path")
           .attr("d", segments)
+          .attr("class", "pie")
           .attr("fill", function(d) {
             return colors[d.data.name];
+          })
+          // .style("stroke", "white")
+          // .style("stroke-width", 0.2)
+          .on('mouseover',function(d) {
+            // on mouseover: show tooltip and change color
+            tip.show(d);
+
+            d3.select(this)
+              .style("opacity", 0.8)
+              .style("stroke","white")
+              .style("stroke-width",3);
+          })
+          .on('mouseout', function(d) {
+            // on mouseout: hide tooltip and change color to its original
+            tip.hide(d);
+
+            d3.select(this)
+              .style("opacity", 1)
+              .style("stroke","white")
+              .style("stroke-width",0.1);
           });
+}
+
+function update_pie(svg, response, year) {
+  console.log(year);
+  var security = response[0];
+  // values = ["WAO","Wajong","WAZ","IVA","WGA","Werkloosheidsuitkering","IOW","Bijstand","IOAW","IOAZ","AOW","ANW","AKW"];
+  var colors = {"WAO":'#e6194b', "Wajong":'#3cb44b', "WAZ":'#ffe119', "IVA":'#4363d8', "WGA":'#f58231', "Werkloosheidsuitkering":'#911eb4', "IOW":'#46f0f0', "Bijstand":'#f032e6', "IOAW":'#bcf60c', "IOAZ":'#800000', "AOW":'#008080', "ANW":'#e6beff', "AKW":'#9a6324'}
+
+  var details = []
+  for (var key in security) {
+    if (key == year) {
+      for (var uitkering in security[key]) {
+        if (uitkering != "total") {
+          details.push({"name":uitkering, "number":security[key][uitkering]});
+        }
+      }
+    }
+  }
+
+  var data = d3.pie()
+               .sort(null)
+               .value(function(d) {
+                 return d.number;
+               })(details);
+
+  var segments = d3.arc()
+                   .innerRadius(0)
+                   .outerRadius(250);
+
+  var sections = svg.selectAll(".sec")
+                    .selectAll("path")
+                    .data(data);
+
+
+  svg.selectAll(".pie")
+     .attr("d", segments)
+     .attr("fill", function(d) {
+       return colors[d.data.name];
+     });
+
+  return svg;
 }

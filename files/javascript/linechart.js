@@ -40,7 +40,7 @@ function add_svg(sort) {
 
 }
 
-function create_linechart(svg, width, height, margin, response) {
+function create_linechart(svg, width, height, margin, response, svg_pie, svg_map, width_map, height_map) {
   // this function adds the barchart to the svg made before
 
   var security = response[0];
@@ -108,7 +108,7 @@ function create_linechart(svg, width, height, margin, response) {
                .attr('class', 'd3-tip')
                .offset([-10, 0])
                .html(function(d) {
-                   return "<strong>Aantal uitkeringen: </strong><span class='details'>" + format(d[1]) +"</span>";
+                   return "<strong>Jaartal: </strong><span class='details'>" + d[0] + "<br><strong>Aantal uitkeringen: </strong><span class='details'>" + format(d[1]) +"</span>";
                });
 
    svg.call(tip);
@@ -161,8 +161,27 @@ function create_linechart(svg, width, height, margin, response) {
      .on('click', function(d) {
        var year = d[0];
        // console.log(year);
-       update_map();
+       change_title("pie", year);
+       svg_pie = update_pie(svg_pie, response, year);
+       change_title("map", year);
+       svg_map = update_map(svg_map, width_map, height_map, response, year);
      });
 
   return [svg, xScale, yScale];
+}
+
+function change_title(sort, year) {
+  // this function changes the title when the barchart has to be updated
+  if (sort == "pie") {
+    d3.selectAll(".title_pie").each(function(d, i) {
+      d3.select(this).text("Pie chart of the spread of benefits - " + year);
+    });
+  } else {
+    if (year < 2015) {
+      year = 2015;
+    }
+    d3.selectAll(".title_map").each(function(d, i) {
+      d3.select(this).text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - " + year);
+    })
+  }
 }

@@ -4,10 +4,14 @@
 
 window.onload = function() {
   var social = "data/json/social_security.json";
+  var gemeente_2015 = "data/json/gemeente_2015.json";
+  var gemeente_2016 = "data/json/gemeente_2016.json";
   var gemeente_2017 = "data/json/gemeente_2017.json";
-  var country = "data/json/map.json"
+  var country_2015 = "data/json/map_2015.json";
+  var country_2016 = "data/json/map_2016.json";
+  var country_2017 = "data/json/map_2017.json";
 
-  var requests = [d3.json(social), d3.json(gemeente_2017), d3.json(country)];
+  var requests = [d3.json(social), d3.json(gemeente_2015), d3.json(gemeente_2016), d3.json(gemeente_2017), d3.json(country_2015), d3.json(country_2016), d3.json(country_2017)];
 
   Promise.all(requests).then(function(response) {
 
@@ -35,8 +39,8 @@ window.onload = function() {
     add_legend(svg_map, "map");
 
     create_pie(svg_pie, width_pie, height_pie, margin_pie, response);
-    create_linechart(svg_line, width_line, height_line, margin_line, response);
     create_map(svg_map, margin_map, width_map, height_map, response);
+    create_linechart(svg_line, width_line, height_line, margin_line, response, svg_pie, svg_map, width_map, height_map);
 
   }).catch(function(e){
       throw(e);

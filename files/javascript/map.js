@@ -91,8 +91,8 @@ function create_map(svg, margin, width, height, response, year=2017) {
 
   svg.call(tip);
 
-  var bijstand = response[1];
-  var country = response[2];
+  var bijstand = response[year - 2014];
+  var country = response[year - 2011];
 
   var bijstandByIndex = {};
 
@@ -100,7 +100,7 @@ function create_map(svg, margin, width, height, response, year=2017) {
     bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
   }
 
-  // connects data to world map
+  // connects data to map
   country.features.forEach(function(d) {
     if (bijstandByIndex[d.properties.statcode]) {
       d.bijstand = bijstandByIndex[d.properties.statcode];
@@ -157,7 +157,52 @@ function create_map(svg, margin, width, height, response, year=2017) {
   return 0;
 }
 
-function update_map() {
-  // console.log("joe");
-  return 0;
+function update_map(svg, width, height, response, year) {
+  if (year < 2015) {
+    console.log("geen data");
+    return svg;
+  } else {
+
+    var color = d3.scaleLinear()
+                  .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
+                  .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+
+    var projection = d3.geoMercator()
+                       .scale(8900)
+                       .translate([-width / 1.55, height * 12.4]);
+
+    var path = d3.geoPath().projection(projection);
+
+    var bijstand = response[year - 2014];
+    // has te be changed because the gemeentes changed
+    var country = response[year - 2011];
+
+    var bijstandByIndex = {};
+
+    for (var key in bijstand) {
+      bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
+    }
+
+    // connects data to map
+    country.features.forEach(function(d) {
+      if (bijstandByIndex[d.properties.statcode]) {
+        d.bijstand = bijstandByIndex[d.properties.statcode];
+      } else {
+        bijstandByIndex[d.properties.statcode] = 0;
+        d.bijstand = 0;
+      }
+    });
+
+    svg.selectAll(".countries")
+       .selectAll("path")
+       .data(country.features)
+       .attr("d", path)
+       // fill country with the correct color
+       .style("fill", function(d) {
+         return color(bijstandByIndex[d.properties.statcode]);
+       });
+  }
+
+
+  return svg;
 }
