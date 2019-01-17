@@ -157,11 +157,30 @@ function create_map(svg, margin, width, height, response, year=2017) {
   return 0;
 }
 
+function add_warning() {
+  d3.select("#map").append("p")
+                   .attr("class", "warning")
+                   .style("visibility", "hidden");
+}
+
+function show_warning(year, previous_year) {
+  d3.selectAll(".warning")
+    .text("There is no data available for " + year + ". The map of " + previous_year + " is still being shown.")
+    .style("visibility", "visible");
+}
+
+function hide_warning() {
+    d3.selectAll(".warning")
+      .style("visibility", "hidden");
+}
+
 function update_map(svg, width, height, response, year) {
+  hide_warning();
+  var previous_year = d3.selectAll(".title_map").text().substr(-4,);
   if (year < 2015) {
-    console.log("geen data");
+    show_warning(year, previous_year);
     return svg;
-  } else {
+  } else if (year != previous_year){
 
     var color = d3.scaleLinear()
                   .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])

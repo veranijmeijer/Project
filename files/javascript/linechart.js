@@ -5,36 +5,53 @@
 function create_title(sort, country="") {
   // this function adds the title above the svg
   if (sort == "map") {
-    d3.select("body").append("h4").attr("class", "title_map").text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - 2017");
+    d3.select("#map").append("h4").attr("class", "title_map").text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - 2017");
   } else if (sort == "pie") {
-    d3.select("body").append("h4").attr("class", "title_pie").text("Pie chart of the spread of benefits - 2017");
+    d3.select("#piechart").append("h4").attr("class", "title_pie").text("Pie chart of the spread of benefits - 2017");
   } else {
-    d3.select("body").append("h4").attr("class", "title_line").text("Linechart 'aantal uitkeringen' (x1000) in The Netherlands");
+    d3.select("#linechart").append("h4").attr("class", "title_line").text("Linechart 'aantal uitkeringen' (x1000) in The Netherlands");
   }
 }
 
 function add_svg(sort) {
   // this function adds the svg, but does not fill it yet
-  var margin, width, height;
+  var svg, margin, width, height;
 
   if (sort == "map") {
     margin = {top: 0, right: 0, bottom: 0, left: 0};
     width = 800;
     height = 800;
+    svg = d3.select("#map")
+             .append("svg")
+             .attr("viewBox", "0 0 800 800")
+             .attr("preserveAspectRatio", "xMidYMid meet")
+             // .attr("width", width)
+             // .attr("height", height)
+             .classed("svg", true);
   } else if (sort == "pie") {
     width = 800;
     height = 600;
+    svg = d3.select("#piechart")
+            .append("svg")
+            .attr("viewBox", "0 0 800 600")
+            .attr("preserveAspectRatio", "xMidYMid meet")
+            // .attr("width", width)
+            // .attr("height", height)
+            .classed("svg", true);
   } else {
-    margin = {top: 30, right: 10, bottom: 150, left: 50};
+    margin = {top: 30, right: 10, bottom: 150, left: 70};
     width = 800;
     height = 600;
+    svg = d3.select("#linechart")
+            .append("svg")
+            .attr("viewBox", "0 0 800 600")
+            .attr("preserveAspectRatio", "xMidYMid meet")
+            // .attr("width", width)
+            // .attr("height", height)
+            .classed("svg", true);
   }
 
-  var svg = d3.select("body")
-              .append("svg")
-              .attr("width", width)
-              .attr("height", height)
-              .classed("svg", true);
+
 
   return [svg, width, height, margin];
 
@@ -72,14 +89,14 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
    // add y-axis
    svg.append("g")
       .attr("class", "y-axis")
-      .attr("transform", "translate(50, 0)")
+      .attr("transform", "translate(70, 0)")
       .call(d3.axisLeft(yScale));
 
    // add label y-axis
-   // svg.append("text")
-   //    .attr("transform", "translate(15, 100) rotate(-90)")
-   //    .attr("class", "y-axis-text")
-   //    .text("Index");
+   svg.append("text")
+      .attr("transform", "translate(25, 220) rotate(-90)")
+      .attr("class", "y-axis-text")
+      .text("Aantal uitkeringen (x1000)");
 
   // add x-axis
   svg.append("g")
@@ -88,11 +105,12 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      .attr("tickSize", "0")
      .call(d3.axisBottom(xScale))
 
-   // .selectAll("text")
-   //   .attr("y", 55)
-   //   .attr("x", -5)
-   //   .attr("transform", "rotate(-90)")
-   //   .style("text-anchor", "end");
+  svg.append("text")
+     .attr("x", width - margin.right - 100)
+     .attr("y", height - margin.bottom / 1.5)
+     // .attr("text-anchor", "end")
+     .text("Jaartallen");
+
    var data = []
    for (var key in security) {
      data.push([+key, security[key].total]);
@@ -113,7 +131,7 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
 
    svg.call(tip);
 
-   // add lines
+   // add line
    var lineFunction = d3.line()
                         .x(function(d) {
                             return xScale(d[0]);
@@ -161,10 +179,11 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      .on('click', function(d) {
        var year = d[0];
        // console.log(year);
-       change_title("pie", year);
+
        svg_pie = update_pie(svg_pie, response, year);
-       change_title("map", year);
        svg_map = update_map(svg_map, width_map, height_map, response, year);
+       change_title("pie", year);
+       change_title("map", year);
      });
 
   return [svg, xScale, yScale];
@@ -177,11 +196,10 @@ function change_title(sort, year) {
       d3.select(this).text("Pie chart of the spread of benefits - " + year);
     });
   } else {
-    if (year < 2015) {
-      year = 2015;
+    if (year >= 2015) {
+      d3.selectAll(".title_map").each(function(d, i) {
+        d3.select(this).text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - " + year);
+      })
     }
-    d3.selectAll(".title_map").each(function(d, i) {
-      d3.select(this).text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - " + year);
-    })
   }
 }

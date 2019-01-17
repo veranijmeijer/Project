@@ -104,3 +104,10 @@ ul, ol, h4, h6, p, .datatext {
   top: 50%;
   left: 100%;
 }
+.warning {
+  text-align: center;
+  background-color: lightblue;
+  border-color: blue;
+  border-style: solid;
+  border-width: 1px;
+}

@@ -31,6 +31,7 @@ window.onload = function() {
     add_legend(svg_pie);
 
     create_title("map");
+    add_warning();
     var map = add_svg("map");
     var svg_map = map[0];
     var width_map = map[1];
