@@ -23,7 +23,7 @@ th, td {
 tr:hover {
   background-color: lightgrey;
 }
-ul, ol, h4, h6, p, .datatext {
+ul, ol, h4, p, .datatext {
   margin-left: 10px;
   margin-right: 10px;
   text-align: justify;
