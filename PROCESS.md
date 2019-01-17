@@ -56,3 +56,11 @@ To do morgen:
 * Radio buttons toevoegen aan kaart
 * Bootstrap grid
 * Dropdown menu of slider om jaren te kiezen
+
+# Dag 7 (don 17 jan)
+* Er komt nu een waarschuwing over de missende data voor de kaart
+* De grid is nu netjes ingedeeld
+
+To do morgen:
+* Radio buttons
+* Dropdown
