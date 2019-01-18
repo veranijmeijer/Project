@@ -204,6 +204,7 @@ function update_map(svg, width, height, response, year) {
 
     // connects data to map
     country.features.forEach(function(d) {
+      console.log(d);
       if (bijstandByIndex[d.properties.statcode]) {
         d.bijstand = bijstandByIndex[d.properties.statcode];
       } else {
@@ -212,14 +213,62 @@ function update_map(svg, width, height, response, year) {
       }
     });
 
+    var format = d3.format(",");
+
+    var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0])
+                .html(function(d) {
+                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Bijstandsdichtheid: </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                });
+
+    svg.call(tip);
+
     svg.selectAll(".countries")
-       .selectAll("path")
+       .remove();
+
+   // appends countries to svg
+   svg.append("g")
+      .attr("class", "countries")
+      .selectAll("path")
        .data(country.features)
+     .enter().append("path")
        .attr("d", path)
        // fill country with the correct color
-       .style("fill", function(d) {
-         return color(bijstandByIndex[d.properties.statcode]);
+       .style("fill", function(d) { return color(bijstandByIndex[d.properties.statcode]); })
+       .style("stroke", "white")
+       .style("stroke-width", 1.5)
+       .style("opacity", 0.8)
+         .style("stroke","white")
+         .style('stroke-width', 0.3)
+         .on('mouseover',function(d) {
+           // on mouseover: show tooltip and change color
+           tip.show(d);
+
+           d3.select(this)
+             .style("opacity", 1)
+             .style("stroke","white")
+             .style("stroke-width",3);
+       })
+       .on('mouseout', function(d) {
+         // on mouseout: hide tooltip and change color to its original
+         tip.hide(d);
+
+         d3.select(this)
+           .style("opacity", 0.8)
+           .style("stroke","white")
+           .style("stroke-width",0.3);
        });
+
+
+    // svg.selectAll(".countries")
+    //    .selectAll("path")
+    //    .data(country.features)
+    //    .attr("d", path)
+    //    // fill country with the correct color
+    //    .style("fill", function(d) {
+    //      return color(bijstandByIndex[d.properties.statcode]);
+    //    });
   }
 
 

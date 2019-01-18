@@ -106,6 +106,8 @@ function update_pie(svg, response, year) {
 
 
     svg.selectAll(".pie")
+       .transition()
+       .duration(1000)
        .attr("d", segments)
        .attr("fill", function(d) {
          return colors[d.data.name];
