@@ -65,3 +65,12 @@ To do morgen:
 * Radio buttons
 * Dropdown
 * Transition toevoegen
+
+# Dag 8 (vrij 18 jan)
+* Transition toegevoegd
+* Map wordt nu goed weergegeven na updaten (eerst miste een aantal gemeenten)
+
+To do:
+* Radio buttons
+* Slider
+* Update functie map verbeteren (om de fout van de gemeenten op te lossen, wordt nu alles verwijderd en een nieuwe map toegevoegd)
