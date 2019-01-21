@@ -179,11 +179,12 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      .on('click', function(d) {
        var year = d[0];
        // console.log(year);
-
+       var sort_map = "joe";
        svg_pie = update_pie(svg_pie, response, year);
-       svg_map = update_map(svg_map, width_map, height_map, response, year);
+       svg_map = update_map_year(svg_map, width_map, height_map, response, year);
        change_title("pie", year);
        change_title("map", year);
+       update_slider(year);
      });
 
   return [svg, xScale, yScale];

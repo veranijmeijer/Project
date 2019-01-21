@@ -21,11 +21,14 @@
         <script src="javascript/d3/d3.js"></script>
         <script src="javascript/d3/d3-tip.js"></script>
         <script src="https://d3js.org/topojson.v1.min.js"></script>
+        <script src="https://unpkg.com/d3-simple-slider/build/d3-simple-slider.js"></script>
 
         <!-- own js files -->
         <script type="text/javascript" src="javascript/map.js"></script>
-        <script type="text/javascript" src="javascript/linechart.js"></script>
         <script type="text/javascript" src="javascript/pie.js"></script>
+        <script type="text/javascript" src="javascript/slider.js"></script>
+        <script type="text/javascript" src="javascript/radio.js"></script>
+        <script type="text/javascript" src="javascript/linechart.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
 
         <link rel="shortcut icon" href="#" />
@@ -55,14 +58,8 @@
           <div class="col-sm-6" id="piechart">
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-3">
-          </div>
-          <div class="col-sm-6" id="slider">
-            <p>Hier komt de slider voor de jaartallen</p>
-          </div>
-          <div class="col-sm-3">
-          </div>
+        <div class="row align-items-center">
+          <div class="col-sm"><div id="slider-time"></div></div>
         </div>
         <div class="row">
           <!-- <div class="col-sm-">
@@ -71,13 +68,8 @@
           </div>
           <div class="col-sm-4" id="radio">
             <h6>Kies welke soort kaart u wil:</h6>
-            <p>Hier komen radio buttons</p>
-            <!-- <form>
-              <input type="radio" name="options" value="dichtheid" checked="" id="radio1">
-              <label>Dichtheid</label>
-              <input type="radio" name="options" value="absoluut" id="radio2">
-              <label>Absolute waardes</label>
-            </form> -->
+            <label><input class="sizeSelect" type="radio" name="mode" value="dichtheid" checked /> Bijstandsdichtheid</label>
+            <label><input class="sizeSelect"  type="radio" name="mode" value="absoluut" /> Absolute aantallen</label>
           </div>
         </div>
     </body>
