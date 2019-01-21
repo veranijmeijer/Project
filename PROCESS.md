@@ -74,3 +74,11 @@ To do:
 * Radio buttons
 * Slider
 * Update functie map verbeteren (om de fout van de gemeenten op te lossen, wordt nu alles verwijderd en een nieuwe map toegevoegd)
+
+# Dag 9 (maa 21 jan)
+* Slider toegevoegd (werkt grotendeels, het enige wat niet werkt: wanneer de map/pie geupdate wordt door middel van de linechart, moet de slider meebewegen naar dat jaartal)
+* Radio buttons toegevoegd (updaten van map werkt, wat niet werkt: de legenda (en kleuren van de kaart) moeten mee updaten; wanneer het jaartal wordt aangepast wordt automatisch de dichtheid weergegeven, maar die moet weergeven welke soort geselecteerd is)
+
+To do:
+* Bovenstaande punten
+* Update functie map verbeteren (zie vrijdag)
