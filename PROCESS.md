@@ -82,3 +82,9 @@ To do:
 To do:
 * Bovenstaande punten
 * Update functie map verbeteren (zie vrijdag)
+
+# Dag 10 (din 22 jan)
+* Radio buttons verbeterd (als het jaartal wordt aangepast wordt de juiste soort kaart getoond)
+
+To do: 
+* Zie maandag
