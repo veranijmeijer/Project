@@ -37,10 +37,10 @@ window.onload = function() {
     var width_map = map[1];
     var height_map = map[2];
     var margin_map = map[3];
-    add_legend(svg_map, "map");
+    svg_legend = add_legend(svg_map, "map");
 
     add_slider(svg_pie, response, svg_map, width_map, height_map);
-    add_radio(svg_map, width_map, height_map, response);
+    add_radio(svg_map, width_map, height_map, response, svg_legend);
     create_pie(svg_pie, width_pie, height_pie, margin_pie, response);
     create_map(svg_map, margin_map, width_map, height_map, response);
     create_linechart(svg_line, width_line, height_line, margin_line, response, svg_pie, svg_map, width_map, height_map);

@@ -179,18 +179,21 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      .on('click', function(d) {
        var year = d[0];
        // console.log(year);
-       var sort_map = "joe";
+       var sort = d3.select(".title_map").text().substr(8,18);
+       if (sort == "Bijstandsontvanger") {
+         sort = "Bijstandsontvangers";
+       }
        svg_pie = update_pie(svg_pie, response, year);
-       svg_map = update_map_year(svg_map, width_map, height_map, response, year);
+       svg_map = update_map_year(svg_map, width_map, height_map, response, year, sort);
        change_title("pie", year);
-       change_title("map", year);
+       change_title("map", year, sort);
        update_slider(year);
      });
 
   return [svg, xScale, yScale];
 }
 
-function change_title(sort, year) {
+function change_title(sort, year, sort_map="") {
   // this function changes the title when the barchart has to be updated
   if (sort == "pie") {
     d3.selectAll(".title_pie").each(function(d, i) {
@@ -199,7 +202,8 @@ function change_title(sort, year) {
   } else {
     if (year >= 2015) {
       d3.selectAll(".title_map").each(function(d, i) {
-        d3.select(this).text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - " + year);
+        console.log(sort_map);
+        d3.select(this).text("Map of '" + sort_map + " (per 1000 inwoners)' in The Netherlands - " + year);
       })
     }
   }

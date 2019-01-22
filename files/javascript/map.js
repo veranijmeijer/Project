@@ -63,7 +63,7 @@ function add_legend(svg, sort) {
      .text(function(d) {
        return d;
      });
-
+  return svg;
 }
 
 function create_map(svg, margin, width, height, response, year=2017) {
@@ -174,7 +174,8 @@ function hide_warning() {
       .style("visibility", "hidden");
 }
 
-function update_map_year(svg, width, height, response, year) {
+function update_map_year(svg, width, height, response, year, sort) {
+  console.log(sort);
   hide_warning();
   var previous_year = d3.selectAll(".title_map").text().substr(-4,);
   if (year < 2015) {
@@ -182,9 +183,6 @@ function update_map_year(svg, width, height, response, year) {
     return svg;
   } else if (year != previous_year){
 
-    var color = d3.scaleLinear()
-                  .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
-                  .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
 
     var projection = d3.geoMercator()
                        .scale(8900)
@@ -197,9 +195,20 @@ function update_map_year(svg, width, height, response, year) {
     var country = response[year - 2011];
 
     var bijstandByIndex = {};
-
+    var color;
     for (var key in bijstand) {
-      bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
+      if (sort == "Bijstandsdichtheid") {
+        color = d3.scaleLinear()
+                  .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
+                  .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+
+        bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
+      } else {
+        color = d3.scaleLinear()
+                  .domain([0, 50, 100, 150, 200, 250, 300, 350, 400])
+                  .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+        bijstandByIndex[key] = bijstand[key].Bijstandsontvangers;
+      }
     }
 
     // connects data to map

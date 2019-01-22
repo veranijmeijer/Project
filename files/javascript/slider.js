@@ -22,9 +22,13 @@ function add_slider(svg_pie, response, svg_map, width, height) {
       .on('onchange', val => {
         var year = d3.timeFormat('%Y')(val);
         update_pie(svg_pie, response, year);
-        update_map_year(svg_map, width, height, response, year);
+        var sort = d3.select(".title_map").text().substr(8,18);
+        if (sort == "Bijstandsontvanger") {
+          sort = "Bijstandsontvangers";
+        }
+        update_map_year(svg_map, width, height, response, year, sort);
         change_title("pie", year);
-        change_title("map", year);
+        change_title("map", year, sort);
       });
 
     var gTime = d3
