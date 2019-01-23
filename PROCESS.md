@@ -86,5 +86,17 @@ To do:
 # Dag 10 (din 22 jan)
 * Radio buttons verbeterd (als het jaartal wordt aangepast wordt de juiste soort kaart getoond)
 
-To do: 
+To do:
 * Zie maandag
+
+# Dag 11 (woe 23 jan)
+* Legenda wordt nu geupdate als de radiobutton wordt aangeklikt
+* Kleuren van de kaart zijn aangepast, zodat het duidelijker wordt weergegeven
+* Als het jaartal verandert, verandert de soort kaart (absoluut/dichtheid) niet
+
+To do
+* Slider updaten wanneer in de linechart een ander jaar wordt gekozen
+* Uitzoeken of er een manier is waarbij niet de hele kaart verwijderd hoeft te worden om te updaten
+* Layout
+* Code
+* Linechart updaten door te klikken op piechart

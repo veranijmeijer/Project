@@ -12,7 +12,7 @@ function add_legend(svg, sort) {
     w = 150;
     h = 220;
     values = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
-    colors = ['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)'];
+    colors = ['#1a9850','#66bd63','#a6d96a','#d9ef8b','#ffffbf','#fee08b','#fdae61','#f46d43','#d73027'];
   } else {
     w = 200;
     h = 310;
@@ -78,8 +78,8 @@ function create_map(svg, margin, width, height, response, year=2017) {
 
 // source colorscheme: http://colorbrewer2.org/?type=sequential&scheme=Greens&n=9
   var color = d3.scaleLinear()
-                .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
-                .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+                .domain([100, 87.5, 75, 62.5, 50, 37.5, 25, 12.5, 0])
+                .range(['#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850']);
   // path = d3.geoPath();
 
   var projection = d3.geoMercator()
@@ -175,13 +175,18 @@ function hide_warning() {
 }
 
 function update_map_year(svg, width, height, response, year, sort) {
+  if (sort == "dichtheid") {
+    sort = "Bijstandsdichtheid";
+  } else {
+    sort = "Bijstandsontvangers"
+  }
   console.log(sort);
   hide_warning();
   var previous_year = d3.selectAll(".title_map").text().substr(-4,);
   if (year < 2015) {
     show_warning(year, previous_year);
     return svg;
-  } else if (year != previous_year){
+  } else {
 
 
     var projection = d3.geoMercator()
@@ -199,14 +204,14 @@ function update_map_year(svg, width, height, response, year, sort) {
     for (var key in bijstand) {
       if (sort == "Bijstandsdichtheid") {
         color = d3.scaleLinear()
-                  .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
-                  .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+                  .domain([100, 87.5, 75, 62.5, 50, 37.5, 25, 12.5, 0])
+                  .range(['#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850']);
 
         bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
       } else {
         color = d3.scaleLinear()
-                  .domain([0, 50, 100, 150, 200, 250, 300, 350, 400])
-                  .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
+                  .domain([50000, 43750, 37500, 31250, 25000, 18750, 12500, 6250, 0])
+                  .range(['#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850']);
         bijstandByIndex[key] = bijstand[key].Bijstandsontvangers;
       }
     }
@@ -228,7 +233,7 @@ function update_map_year(svg, width, height, response, year, sort) {
                 .attr('class', 'd3-tip')
                 .offset([-10, 0])
                 .html(function(d) {
-                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Bijstandsdichtheid: </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>" + sort + ": </strong><span class='details'>" + format(d.bijstand) +"</span>";
                 });
 
     svg.call(tip);
@@ -280,95 +285,6 @@ function update_map_year(svg, width, height, response, year, sort) {
     //    });
   }
 
-
-  return svg;
-}
-
-function update_map_sort(svg, width, height, response, sort) {
-
-  hide_warning();
-  var year = d3.selectAll(".title_map").text().substr(-4,);
-  var color = d3.scaleLinear()
-                .domain([0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100])
-                .range(['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)']);
-
-  var projection = d3.geoMercator()
-                     .scale(8900)
-                     .translate([-width / 1.55, height * 12.4]);
-
-  var path = d3.geoPath().projection(projection);
-
-  var bijstand = response[year - 2014];
-  // has te be changed because the gemeentes changed
-  var country = response[year - 2011];
-
-  var bijstandByIndex = {};
-
-  for (var key in bijstand) {
-    if (sort == "dichtheid") {
-      bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
-    } else {
-      bijstandByIndex[key] = bijstand[key].Bijstandsontvangers;
-    }
-  }
-
-  // connects data to map
-  country.features.forEach(function(d) {
-    // console.log(d);
-    if (bijstandByIndex[d.properties.statcode]) {
-      d.bijstand = bijstandByIndex[d.properties.statcode];
-    } else {
-      bijstandByIndex[d.properties.statcode] = 0;
-      d.bijstand = 0;
-    }
-  });
-
-  var format = d3.format(",");
-
-  var tip = d3.tip()
-              .attr('class', 'd3-tip')
-              .offset([-10, 0])
-              .html(function(d) {
-                  return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Bijstandsdichtheid: </strong><span class='details'>" + format(d.bijstand) +"</span>";
-              });
-
-  svg.call(tip);
-
-  svg.selectAll(".countries")
-     .remove();
-
- // appends countries to svg
- svg.append("g")
-    .attr("class", "countries")
-    .selectAll("path")
-     .data(country.features)
-   .enter().append("path")
-     .attr("d", path)
-     // fill country with the correct color
-     .style("fill", function(d) { return color(bijstandByIndex[d.properties.statcode]); })
-     .style("stroke", "white")
-     .style("stroke-width", 1.5)
-     .style("opacity", 0.8)
-       .style("stroke","white")
-       .style('stroke-width', 0.3)
-       .on('mouseover',function(d) {
-         // on mouseover: show tooltip and change color
-         tip.show(d);
-
-         d3.select(this)
-           .style("opacity", 1)
-           .style("stroke","white")
-           .style("stroke-width",3);
-     })
-     .on('mouseout', function(d) {
-       // on mouseout: hide tooltip and change color to its original
-       tip.hide(d);
-
-       d3.select(this)
-         .style("opacity", 0.8)
-         .style("stroke","white")
-         .style("stroke-width",0.3);
-     });
 
   return svg;
 }

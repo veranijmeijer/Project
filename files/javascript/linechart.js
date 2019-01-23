@@ -5,11 +5,11 @@
 function create_title(sort, country="") {
   // this function adds the title above the svg
   if (sort == "map") {
-    d3.select("#map").append("h4").attr("class", "title_map").text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - 2017");
+    d3.select("#map").append("h6").attr("class", "title_map").text("Map of 'Bijstandsdichtheid (per 1000 inwoners)' in The Netherlands - 2017");
   } else if (sort == "pie") {
-    d3.select("#piechart").append("h4").attr("class", "title_pie").text("Pie chart of the spread of benefits - 2017");
+    d3.select("#piechart").append("h6").attr("class", "title_pie").text("Pie chart of the spread of benefits - 2017");
   } else {
-    d3.select("#linechart").append("h4").attr("class", "title_line").text("Linechart 'aantal uitkeringen' (x1000) in The Netherlands");
+    d3.select("#linechart").append("h6").attr("class", "title_line").text("Linechart 'aantal uitkeringen' (x1000) in The Netherlands");
   }
 }
 
@@ -25,9 +25,14 @@ function add_svg(sort) {
              .append("svg")
              .attr("viewBox", "0 0 800 800")
              .attr("preserveAspectRatio", "xMidYMid meet")
+             // .attr("fill", "grey")
              // .attr("width", width)
              // .attr("height", height)
              .classed("svg", true);
+    // svg.append("rect")
+    //    .attr("width", "100%")
+    //    .attr("height", "100%")
+    //    .attr("fill", "lightgrey");
   } else if (sort == "pie") {
     width = 800;
     height = 600;

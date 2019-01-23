@@ -5,18 +5,19 @@
 function add_radio(svg, width, height, response, svg_legend) {
   d3.selectAll(".sizeSelect").on("click", function(d,i) {  // <-- 1
       // console.log(this.value);
-
+      var year = d3.selectAll(".title_map").text().substr(-4,);
       sort = this.value;
       console.log(sort);
-      update_map_sort(svg, width, height, response, sort);
+      update_map_year(svg, width, height, response, year, sort);
+
       if (sort == "dichtheid") {
         sort = "Bijstandsdichtheid";
       } else {
         sort = "Bijstandsontvangers"
       }
-      var year = d3.selectAll(".title_map").text().substr(-4,);
+
       change_title("map", year, sort);
-      console.log("joe");
+      // console.log("joe");
       update_legend(svg_legend, sort);
 
       // Determine how to size the slices.
@@ -36,38 +37,20 @@ function add_radio(svg, width, height, response, svg_legend) {
 }
 
 function update_legend(svg, sort) {
-  var colors = ['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)'];
+  // var colors = ['rgb(247,252,245)','rgb(229,245,224)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,109,44)','rgb(0,68,27)'];
   var values;
-  if (sort == "dichtheid") {
+  console.log(sort);
+  if (sort == "Bijstandsdichtheid") {
     values = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
   } else {
-    values = [0, 50, 100, 150, 200, 250, 300, 350, 400];
+    values = ["0", "6,250", "12,500", "18,750", "25,000", "31,250", "37,500", "43,750", "50,000"];
   }
 
-  // w=150
-  // // add rectangles for legend
-  // svg.selectAll("rect_leg")
-  //    .data(colors)
-  //    .enter().append("rect")
-  //    .attr("x", 800 - 150 + 5)
-  //    .attr("y", function(d, i) {
-  //      return 20 + i * 22;
-  //    })
-  //    .attr("width", 20)
-  //    .attr("height", 20)
-  //    .style("fill", function(d) {
-  //      return d;
-  //    });
+  console.log(svg.selectAll(".leg_text").text());
 
   // add text for legend
-  svg.selectAll("leg_text")
+  svg.selectAll(".leg_text")
      .data(values)
-     .select("text")
-     .attr("x", 800 - 150 + 30)
-     .attr("y", function(d, i) {
-       return 37 + i * 22;
-     })
-     .attr("class", "leg_text")
      .text(function(d) {
        return d;
      });
