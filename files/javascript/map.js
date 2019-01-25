@@ -73,7 +73,7 @@ function create_map(svg, margin, width, height, response, year=2017) {
               .attr('class', 'd3-tip')
               .offset([-10, 0])
               .html(function(d) {
-                  return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Bijstandsdichtheid: </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                  return "<strong>Municipality: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Density: </strong><span class='details'>" + format(d.bijstand) +"</span>";
               });
 
 // source colorscheme: http://colorbrewer2.org/?type=sequential&scheme=Greens&n=9
@@ -175,11 +175,11 @@ function hide_warning() {
 }
 
 function update_map_year(svg, width, height, response, year, sort) {
-  if (sort == "dichtheid") {
-    sort = "Bijstandsdichtheid";
-  } else {
-    sort = "Bijstandsontvangers"
-  }
+  // if (sort == "Density") {
+  //   sort = "Bijstandsdichtheid";
+  // } else {
+  //   sort = "Bijstandsontvangers"
+  // }
   console.log(sort);
   hide_warning();
   var previous_year = d3.selectAll(".title_map").text().substr(-4,);
@@ -202,7 +202,7 @@ function update_map_year(svg, width, height, response, year, sort) {
     var bijstandByIndex = {};
     var color;
     for (var key in bijstand) {
-      if (sort == "Bijstandsdichtheid") {
+      if (sort == "Density") {
         color = d3.scaleLinear()
                   .domain([100, 87.5, 75, 62.5, 50, 37.5, 25, 12.5, 0])
                   .range(['#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850']);
@@ -233,7 +233,7 @@ function update_map_year(svg, width, height, response, year, sort) {
                 .attr('class', 'd3-tip')
                 .offset([-10, 0])
                 .html(function(d) {
-                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>" + sort + ": </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                    return "<strong>Municipality: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>" + sort + ": </strong><span class='details'>" + format(d.bijstand) +"</span>";
                 });
 
     svg.call(tip);

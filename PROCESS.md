@@ -100,3 +100,14 @@ To do
 * Layout
 * Code
 * Linechart updaten door te klikken op piechart
+
+# Dag 12 (vrij 25 jan)
+Minder kunnen doen door ziekte.
+* Alles omgezet naar Engels
+* Updatefunctie van map verbeterd (het klikken op de radio buttons is nu logischer in de code)
+
+To do
+* Slider updaten wanneer in de linechart een ander jaar wordt gekozen
+* Layout
+* Code
+* Linechart updaten door te klikken op piechart

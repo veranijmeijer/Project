@@ -10,11 +10,11 @@ function add_radio(svg, width, height, response, svg_legend) {
       console.log(sort);
       update_map_year(svg, width, height, response, year, sort);
 
-      if (sort == "dichtheid") {
-        sort = "Bijstandsdichtheid";
-      } else {
-        sort = "Bijstandsontvangers"
-      }
+      // if (sort == "dichtheid") {
+      //   sort = "Bijstandsdichtheid";
+      // } else {
+      //   sort = "Bijstandsontvangers"
+      // }
 
       change_title("map", year, sort);
       // console.log("joe");
