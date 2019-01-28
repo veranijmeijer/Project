@@ -273,7 +273,7 @@
         .attr(y, k * 20)
         .attr(
           'dy',
-          orientation === top ? '0em' : orientation === bottom ? '.50em' : '.32em'
+          orientation === top ? '0em' : orientation === bottom ? '.71em' : '.32em'
         )
         .attr(
           'text-anchor',

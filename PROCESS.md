@@ -103,7 +103,7 @@ To do
 
 # Dag 12 (vrij 25 jan)
 Minder kunnen doen door ziekte.
-* Alles omgezet naar Engels
+* Alles omgezet naar Nederlands
 * Updatefunctie van map verbeterd (het klikken op de radio buttons is nu logischer in de code)
 
 To do
@@ -111,3 +111,11 @@ To do
 * Layout
 * Code
 * Linechart updaten door te klikken op piechart
+
+# Dag 13 (maa 28 jan)
+* Functie toegevoegd waarmee de linechart wordt geupdate door op de piechart te klikken
+
+To do
+* Slider (lettertype en updaten bij ander jaar via linechart)
+* Code
+* Layout

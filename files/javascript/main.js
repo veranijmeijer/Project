@@ -28,7 +28,7 @@ window.onload = function() {
     var width_pie = pie[1];
     var height_pie = pie[2];
     var margin_pie = pie[3];
-    add_legend(svg_pie);
+    var svg_legend_pie = add_legend(svg_pie, "pie");
 
     create_title("map");
     add_warning();
@@ -41,7 +41,7 @@ window.onload = function() {
 
     add_slider(svg_pie, response, svg_map, width_map, height_map);
     add_radio(svg_map, width_map, height_map, response, svg_legend);
-    create_pie(svg_pie, width_pie, height_pie, margin_pie, response);
+    create_pie(svg_pie, width_pie, height_pie, margin_pie, response, svg_line, margin_line, svg_legend_pie);
     create_map(svg_map, margin_map, width_map, height_map, response);
     create_linechart(svg_line, width_line, height_line, margin_line, response, svg_pie, svg_map, width_map, height_map);
 

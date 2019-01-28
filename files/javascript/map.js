@@ -7,18 +7,19 @@
 function add_legend(svg, sort) {
   // define size of svg
   var w, h, values, colors;
-
+  console.log(sort);
   if (sort == "map") {
     w = 150;
     h = 220;
     values = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
-    colors = ['#1a9850','#66bd63','#a6d96a','#d9ef8b','#ffffbf','#fee08b','#fdae61','#f46d43','#d73027'];
+    colors = {0: '#1a9850', 12.5: '#66bd63', 25: '#a6d96a', 37.5: '#d9ef8b', 50: '#ffffbf', 62.5: '#fee08b', 75: '#fdae61', 87.5: '#f46d43', 100: '#d73027'};
   } else {
+    sort = "pie"
     w = 200;
     h = 310;
     // source: https://sashat.me/2017/01/11/list-of-20-simple-distinct-colors/
     values = ["WAO","Wajong","WAZ","IVA","WGA","Werkloosheidsuitkering","IOW","Bijstand","IOAW","IOAZ","AOW","ANW","AKW"];
-    colors = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#800000', '#008080', '#e6beff', '#9a6324'];
+    colors = {"WAO":'#e6194b', "Wajong":'#3cb44b', "WAZ":'#ffe119', "IVA":'#4363d8', "WGA":'#f58231', "Werkloosheidsuitkering":'#911eb4', "IOW":'#46f0f0', "Bijstand":'#f032e6', "IOAW":'#bcf60c', "IOAZ":'#800000', "AOW":'#008080', "ANW":'#e6beff', "AKW":'#9a6324'}
   }
 
   // add background legend
@@ -35,12 +36,16 @@ function add_legend(svg, sort) {
      .attr("y", 18)
      .attr("class", "titles")
      .style("text-anchor", "middle")
-     .text("Legend");
+     .text("Legenda");
 
   // add rectangles for legend
   svg.selectAll("rect_leg")
-     .data(colors)
+     .data(values)
      .enter().append("rect")
+     .attr("class", "rect_" + sort)
+     .attr("id", function(d) {
+       return d;
+     })
      .attr("x", 800 - w + 5)
      .attr("y", function(d, i) {
        return 20 + i * 22;
@@ -48,8 +53,9 @@ function add_legend(svg, sort) {
      .attr("width", 20)
      .attr("height", 20)
      .style("fill", function(d) {
-       return d;
+       return colors[d];
      });
+
 
   // add text for legend
   svg.selectAll("leg_text")
@@ -73,7 +79,7 @@ function create_map(svg, margin, width, height, response, year=2017) {
               .attr('class', 'd3-tip')
               .offset([-10, 0])
               .html(function(d) {
-                  return "<strong>Municipality: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Density: </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                  return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Density: </strong><span class='details'>" + format(d.bijstand) +"</span>";
               });
 
 // source colorscheme: http://colorbrewer2.org/?type=sequential&scheme=Greens&n=9
@@ -180,7 +186,7 @@ function update_map_year(svg, width, height, response, year, sort) {
   // } else {
   //   sort = "Bijstandsontvangers"
   // }
-  console.log(sort);
+  console.log(sort, "ja");
   hide_warning();
   var previous_year = d3.selectAll(".title_map").text().substr(-4,);
   if (year < 2015) {
@@ -202,7 +208,7 @@ function update_map_year(svg, width, height, response, year, sort) {
     var bijstandByIndex = {};
     var color;
     for (var key in bijstand) {
-      if (sort == "Density") {
+      if (sort == "Dichtheid") {
         color = d3.scaleLinear()
                   .domain([100, 87.5, 75, 62.5, 50, 37.5, 25, 12.5, 0])
                   .range(['#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850']);
@@ -233,7 +239,7 @@ function update_map_year(svg, width, height, response, year, sort) {
                 .attr('class', 'd3-tip')
                 .offset([-10, 0])
                 .html(function(d) {
-                    return "<strong>Municipality: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>" + sort + ": </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                    return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>" + sort + ": </strong><span class='details'>" + format(d.bijstand) +"</span>";
                 });
 
     svg.call(tip);

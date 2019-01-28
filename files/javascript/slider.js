@@ -13,7 +13,7 @@ function add_slider(svg_pie, response, svg_map, width, height) {
       .min(d3.min(dataTime))
       .max(d3.max(dataTime))
       .step(1000 * 60 * 60 * 24 * 365)
-      .width(450)
+      .width(350)
       // .attr("font-size", 8)
       .tickFormat(d3.timeFormat('%Y'))
       .tickValues(dataTime)
@@ -22,10 +22,7 @@ function add_slider(svg_pie, response, svg_map, width, height) {
       .on('onchange', val => {
         var year = d3.timeFormat('%Y')(val);
         update_pie(svg_pie, response, year);
-        var sort = d3.select(".title_map").text().substr(0,7);
-        if (sort == "Number ") {
-          sort = "Number";
-        }
+        var sort = d3.select(".title_map").text().substr(0,9);
         update_map_year(svg_map, width, height, response, year, sort);
         change_title("pie", year);
         change_title("map", year, sort);
