@@ -221,8 +221,8 @@
       if (displayValue && value.length === 1) {
         handleEnter
           .append('text')
-          .attr('font-size', 10) // TODO: Remove coupling to font-size in d3-axis
-          .attr(y, k * 27)
+          .attr('font-size', 11) // TODO: Remove coupling to font-size in d3-axis
+          .attr(y, 22)
           .attr(
             'dy',
             orientation === top
@@ -270,11 +270,12 @@
       context
         .selectAll('.axis text')
         .attr('fill', '#aaa')
-        .attr(y, k * 20)
+        .attr(y, k * 15)
         .attr(
           'dy',
           orientation === top ? '0em' : orientation === bottom ? '.71em' : '.32em'
         )
+        .attr('font-size', 11)
         .attr(
           'text-anchor',
           orientation === right

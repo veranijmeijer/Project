@@ -95,11 +95,12 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
    svg.append("g")
       .attr("class", "y-axis")
       .attr("transform", "translate(70, 0)")
+      .attr("font", "10px verdana")
       .call(d3.axisLeft(yScale));
 
    // add label y-axis
    svg.append("text")
-      .attr("transform", "translate(25, 220) rotate(-90)")
+      .attr("transform", "translate(15, 220) rotate(-90)")
       .attr("class", "y-axis-text")
       .text("Aantal uitkeringen (x1000)");
 
@@ -111,6 +112,7 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      .call(d3.axisBottom(xScale))
 
   svg.append("text")
+     .attr("class", "x-axis-text")
      .attr("x", width - margin.right - 80)
      .attr("y", height - margin.bottom / 1.5)
      // .attr("text-anchor", "end")

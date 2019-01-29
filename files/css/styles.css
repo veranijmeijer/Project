@@ -111,3 +111,16 @@ ul, ol, h4, p, .datatext {
   border-style: solid;
   border-width: 1px;
 }
+/* .axis {
+  color: green;
+} */
+/* .y-axis, .x-axis {
+  font: 11px verdana;
+} */
+.tick {
+  font: 11px verdana;
+}
+.y-axis-text, .x-axis-text {
+  font: 13px verdana;
+  font-weight: bold;
+}

@@ -119,3 +119,13 @@ To do
 * Slider (lettertype en updaten bij ander jaar via linechart)
 * Code
 * Layout
+
+# Dag 14 (din 29 jan)
+* Slider gerepareerd
+* Layout verbeterd
+* Code verbeterd
+
+To do
+* Code en layout afmaken
+* Video
+* Report

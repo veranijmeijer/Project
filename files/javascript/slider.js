@@ -13,7 +13,7 @@ function add_slider(svg_pie, response, svg_map, width, height) {
       .min(d3.min(dataTime))
       .max(d3.max(dataTime))
       .step(1000 * 60 * 60 * 24 * 365)
-      .width(350)
+      .width(650)
       // .attr("font-size", 8)
       .tickFormat(d3.timeFormat('%Y'))
       .tickValues(dataTime)
@@ -31,8 +31,11 @@ function add_slider(svg_pie, response, svg_map, width, height) {
     var gTime = d3
       .select('div#slider-time')
       .append('svg')
-      .attr('width', 700)
-      .attr('height', 100)
+      .attr("viewBox", "0 0 700 100")
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      // .attr("width", width)
+      // .attr("height", height)
+      .classed("svg", true)
       .append('g')
       .attr('transform', 'translate(20,20)');
 
