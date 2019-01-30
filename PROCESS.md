@@ -129,3 +129,9 @@ To do
 * Code en layout afmaken
 * Video
 * Report
+
+# Dag 15 (woe 30 jan)
+* License aangemaakt
+* Readme geschreven
+* Code netjes gemaakt (o.a. stijl)
+* Layout netjes en consequent gemaakt
