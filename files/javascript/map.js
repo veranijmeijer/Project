@@ -17,8 +17,8 @@ function create_map(svg, margin, width, height, response) {
                 .range(['#d73027','#f46d43','#fdae61','#fee08b','#ffffbf','#d9ef8b','#a6d96a','#66bd63','#1a9850']);
 
   var projection = d3.geoMercator()
-                     .scale(8900)
-                     .translate([-width / 1.55, height * 12.4]);
+                     .scale(7500)
+                     .translate([-width / 1.4, height * 13.89]);
 
   var path = d3.geoPath().projection(projection);
 

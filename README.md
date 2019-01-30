@@ -11,29 +11,31 @@ Er zijn in Nederland veel mensen die een uitkering krijgen. Toch zijn er weinig 
 
 Met behulp van deze visualisatie wordt duidelijk gemaakt hoeveel uitkeringen er worden uitgegeven en hoe deze uitkeringen verdeeld zijn de afgelopen jaren en door welke factoren dit beïnvloedt wordt.
 
-Plaatje homepage
+<img src="doc/home.jpg" width="700"><br>
 ## Demonstratie website
 
 ### Verhaal
-Plaatje verhaal
-Op deze pagina wordt in het kort informatie gegeven over de uitkeringen in Nederland.
+<img src="doc/story.jpg" width="700"><br>
+Op deze pagina wordt in het kort informatie gegeven over de uitkeringen in Nederland. Daarnaast staat hier ook de uitleg over hoe de site gebruikt kan worden.
 
 
 ### Visualisaties
-Plaatje complete pagina
+<img src="doc/vis.jpg" width="700">
 Op deze pagina staan alle visualisaties van dit project:
 1. <b>Linechart</b><br>
-Plaatje linechart<br>
+<img src="doc/line.jpg" width="400"><br>
 Hierin wordt per jaar (1998-2017) weergegeven hoeveel uitkeringen er in Nederland zijn. Wanneer op één van de jaren wordt geklikt, zullen de piechart en map geupdate worden voor dat specifieke jaar.
-2. <b>Piechart</b><br>Plaatje piechart <br>In deze piechart wordt voor een specifiek jaar weergegeven hoe de verschillende soorten uitkeringen verdeeld zijn. Wanneer op één van deze uitkeringen wordt geklikt (in de piechart zelf of de legenda van de piechart), zal er in de linechart een lijn worden toegevoegd voor die specifieke uitkering, die weergeeft hoe het aantal uitkeringen van die uitkering zich ontwikkeld heeft afgelopen jaren. Deze lijn zal dezelfde kleur hebben als deze uitkering in de piechart en legenda heeft. Wanneer nogmaals op dezelfde uitkering wordt geklikt, wordt de lijn weer verwijderd.
+2. <b>Piechart</b><br>
+<img src="doc/pie.jpg" width="400"><br>
+In deze piechart wordt voor een specifiek jaar weergegeven hoe de verschillende soorten uitkeringen verdeeld zijn. Wanneer op één van deze uitkeringen wordt geklikt (in de piechart zelf of de legenda van de piechart), zal er in de linechart een lijn worden toegevoegd voor die specifieke uitkering, die weergeeft hoe het aantal uitkeringen van die uitkering zich ontwikkeld heeft afgelopen jaren. Deze lijn zal dezelfde kleur hebben als deze uitkering in de piechart en legenda heeft. Wanneer nogmaals op dezelfde uitkering wordt geklikt, wordt de lijn weer verwijderd.
 3. <b>Slider</b><br>
-Plaatje slider<br>
+<img src="doc/slider.jpg" width="600"><br>
 Deze slider is een tweede manier om de piechart en map te updaten. Wanneer er op wordt geklikt, zullen de nieuwe piechart en map van dat specifieke jaar worden weergegeven.
 4. <b>Map</b><br>
-Plaatje map<br>
+<img src="doc/map.jpg" width="400"><br>
 Deze kaart kan twee verschillende dingen weergegeven over de gemeentes in Nederland, namelijk de dichtheid van het aantal bijstandsuitkeringen of het absolute aantal bijstandsuitkeringen. De kleuren corresponderen met de legenda die ernaast staat. Voor de kaart is alleen data beschikbaar voor 2015, 2016 en 2017. Wanneer één van de andere jaren wordt geselecteerd, blijft de voorgaande kaart zichtbaar en komt er een melding die dit ook aangeeft.
 5. <b>Radio buttons</b><br>
-Plaatje radio buttons<br>
+<img src="doc/radio.jpg" width="200"><br>
 Wanneer één van de radiobuttons wordt aangeklikt, zal de kaart worden geupdate voor de soort die wordt gekozen (dichtheid/absolute aantal).
 
 ## Info over repository

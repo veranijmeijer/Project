@@ -37,7 +37,8 @@ window.onload = function() {
     var width_map = map[1];
     var height_map = map[2];
     var margin_map = map[3];
-    svg_legend = add_legend(svg_map, "map");
+    var svg_legend_map = add_svg("legend")[0];
+    svg_legend = add_legend(svg_legend_map, "map");
 
     add_slider(svg_pie, response, svg_map, width_map, height_map);
     add_radio(svg_map, width_map, height_map, response, svg_legend);

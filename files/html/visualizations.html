@@ -33,13 +33,13 @@
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgrey;">
-        <a class="navbar-brand" href="../index.html">Sociale zekerheid</a>
+        <a class="navbar-brand" href="../../index.html">Sociale zekerheid</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="info.html">Verhaal</a>
             <a class="nav-item nav-link active" href="#">Visualisaties</a>
             <a class="nav-item nav-link" href="data.html">Databronnen</a>
@@ -47,6 +47,7 @@
           </div>
         </div>
       </nav>
+      <p></p>
       <div class="container">
         <div class="row">
           <div class="col-sm-6" id="linechart">
@@ -61,12 +62,15 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-8" id="map">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-4" id="map">
           </div>
           <div class="col-sm-4" id="radio">
+            <!-- <p><br><br><br><br><br><br><br></p> -->
             <h6>Kies een kaart:</h6>
-            <label><input class="sizeSelect" type="radio" name="mode" value="Dichtheid" checked /> Dichtheid</label>
+            <label><input class="sizeSelect" type="radio" name="mode" value="Dichtheid" checked /> Dichtheid</label><br>
             <label><input class="sizeSelect"  type="radio" name="mode" value="Totale aantal" /> Totale aantal</label>
+            <div id="legend"></div>
           </div>
         </div>
     </body>
