@@ -1,7 +1,27 @@
 # Ontwikkeling sociale zekerheid in Nederland
 
-## Website
-https://veranijmeijer.github.io/Project/index
+## Info
+Programmeerproject Minor Programmeren
+Naam: Vera Nijmeijer
+Studentnummer: 10753567
+Website: https://veranijmeijer.github.io/Project/index
+
+## Doel
+
+## Demonstratie website
+Homepage:
+
+Verhaal:
+
+Visualisaties:
+
+## Info over repository
+
+## Bronnen voor code
+
+## Bronnen voor data
+
+## License
 
 ## Probleem
 Er zijn in Nederland veel mensen die een uitkering krijgen. Toch zijn er weinig mensen die weten hoeveel uitkeringen er worden uitgegeven en welke. Er is dus een gebrek aan kennis over de uitkeringen in Nederland. De doelgroep van deze datavisualisatie zijn mensen met interesse in de sociale zekerheid in Nederland en de verdeling van de uitkeringen de afgelopen jaren. Met deze visualisatie zal er meer duidelijkheid komen over uitkeringen in Nederland.
