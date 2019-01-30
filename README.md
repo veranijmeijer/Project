@@ -1,4 +1,3 @@
-# Projectvoorstel programmeerproject
 # Ontwikkeling sociale zekerheid in Nederland
 
 ## Website
