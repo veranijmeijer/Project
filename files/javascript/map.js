@@ -79,7 +79,7 @@ function create_map(svg, margin, width, height, response, year=2017) {
               .attr('class', 'd3-tip')
               .offset([-10, 0])
               .html(function(d) {
-                  return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Density: </strong><span class='details'>" + format(d.bijstand) +"</span>";
+                  return "<strong>Gemeente: </strong><span class='details'>" + d.properties.statnaam + "<br></span>" + "<strong>Dichtheid: </strong><span class='details'>" + format(d.bijstand) +"</span>";
               });
 
 // source colorscheme: http://colorbrewer2.org/?type=sequential&scheme=Greens&n=9

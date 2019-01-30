@@ -221,7 +221,8 @@
       if (displayValue && value.length === 1) {
         handleEnter
           .append('text')
-          .attr('font-size', 11) // TODO: Remove coupling to font-size in d3-axis
+          .attr('font-size', 12) // TODO: Remove coupling to font-size in d3-axis
+          .attr('font-family', 'arial')
           .attr(y, 22)
           .attr(
             'dy',
@@ -275,7 +276,8 @@
           'dy',
           orientation === top ? '0em' : orientation === bottom ? '.71em' : '.32em'
         )
-        .attr('font-size', 11)
+        .attr('font-size', 12)
+        .attr('font-family', 'arial')
         .attr(
           'text-anchor',
           orientation === right

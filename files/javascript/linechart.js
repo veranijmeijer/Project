@@ -44,7 +44,7 @@ function add_svg(sort) {
             // .attr("height", height)
             .classed("svg", true);
   } else {
-    margin = {top: 30, right: 10, bottom: 150, left: 70};
+    margin = {top: 30, right: 10, bottom: 60, left: 70};
     width = 800;
     height = 600;
     svg = d3.select("#linechart")
@@ -95,26 +95,26 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
    svg.append("g")
       .attr("class", "y-axis")
       .attr("transform", "translate(70, 0)")
-      .attr("font", "10px verdana")
+      // .attr("font", "10px verdana")
       .call(d3.axisLeft(yScale));
 
    // add label y-axis
    svg.append("text")
-      .attr("transform", "translate(15, 220) rotate(-90)")
+      .attr("transform", "translate(15, 250) rotate(-90)")
       .attr("class", "y-axis-text")
       .text("Aantal uitkeringen (x1000)");
 
   // add x-axis
   svg.append("g")
      .attr("class", "x-axis")
-     .attr("transform", "translate(0, 450)")
+     .attr("transform", "translate(0, 540)")
      .attr("tickSize", "0")
      .call(d3.axisBottom(xScale))
 
   svg.append("text")
      .attr("class", "x-axis-text")
      .attr("x", width - margin.right - 80)
-     .attr("y", height - margin.bottom / 1.5)
+     .attr("y", 585)
      // .attr("text-anchor", "end")
      .text("Jaartal");
 
@@ -133,7 +133,7 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
                .attr('class', 'd3-tip')
                .offset([-10, 0])
                .html(function(d) {
-                   return "<strong>Jaartal: </strong><span class='details'>" + d[0] + "<br><strong>Aantal uitkeringen: </strong><span class='details'>" + format(d[1]) +"</span>";
+                   return "<strong>Jaartal: </strong><span class='details'>" + d[0] + "</span><br><strong>Aantal uitkeringen: </strong><span class='details'>" + format(d[1]) +"</span>";
                });
 
    svg.call(tip);

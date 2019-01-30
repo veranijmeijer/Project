@@ -14,7 +14,8 @@ body {
   width: 70%;
 }
 table {
-  margin-left: 30px;
+  font-family: arial;
+  /* margin-left: 10px; */
 }
 th, td {
   border-bottom: 1px solid #ddd;
@@ -23,10 +24,9 @@ th, td {
 tr:hover {
   background-color: lightgrey;
 }
-ul, ol, h4, p, .datatext {
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: justify;
+.datatext {
+  font-family: arial;
+  font-size: 15px;
 }
 .title_line {
   text-align: center;
@@ -47,16 +47,28 @@ ul, ol, h4, p, .datatext {
   fill: white;
   stroke: #000;
 }
+.leg_text {
+  font-family: arial;
+  font-size: 15px;
+}
+.titles {
+  font-family: arial;
+  font-size: 20px;
+}
 /* Tooltip CSS */
 .d3-tip {
-  line-height: 1.5;
-  font-weight: 400;
-  font-family:"avenir next", Arial, sans-serif;
+  line-height: 1;
+  font-family: arial;
+  font-size: 14px;
   padding: 6px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #FFA500;
+  background: rgba(0, 0, 0, 0.8);
+  color: lightgrey;
   border-radius: 1px;
   pointer-events: none;
+}
+.details {
+  color: white;
+  font-weight: lighter;
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -111,16 +123,28 @@ ul, ol, h4, p, .datatext {
   border-style: solid;
   border-width: 1px;
 }
-/* .axis {
-  color: green;
-} */
-/* .y-axis, .x-axis {
-  font: 11px verdana;
-} */
 .tick {
-  font: 11px verdana;
+  font: 15px arial;
 }
 .y-axis-text, .x-axis-text {
-  font: 13px verdana;
+  font: 17px arial;
   font-weight: bold;
+}
+h6 {
+  font: 18px arial;
+}
+label {
+  font: 15px arial;
+}
+body {
+  background-color: white;
+}
+.navbar {
+  font-family: arial;
+}
+h4, h5 {
+  font-family: arial;
+}
+p {
+  font-family: 15px arial;
 }
