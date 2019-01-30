@@ -23,19 +23,19 @@ Op deze pagina wordt in het kort informatie gegeven over de uitkeringen in Neder
 <img src="doc/vis.jpg" width="700">
 Op deze pagina staan alle visualisaties van dit project:
 1. <b>Linechart</b><br>
-<img src="doc/line.jpg" width="400"><br>
+<img src="doc/line.jpg" width="400">
 Hierin wordt per jaar (1998-2017) weergegeven hoeveel uitkeringen er in Nederland zijn. Wanneer op één van de jaren wordt geklikt, zullen de piechart en map geupdate worden voor dat specifieke jaar.<br>
 2. <b>Piechart</b><br>
-<img src="doc/pie.jpg" width="400"><br>
+<img src="doc/pie.jpg" width="400">
 In deze piechart wordt voor een specifiek jaar weergegeven hoe de verschillende soorten uitkeringen verdeeld zijn. Wanneer op één van deze uitkeringen wordt geklikt (in de piechart zelf of de legenda van de piechart), zal er in de linechart een lijn worden toegevoegd voor die specifieke uitkering, die weergeeft hoe het aantal uitkeringen van die uitkering zich ontwikkeld heeft afgelopen jaren. Deze lijn zal dezelfde kleur hebben als deze uitkering in de piechart en legenda heeft. Wanneer nogmaals op dezelfde uitkering wordt geklikt, wordt de lijn weer verwijderd.<br>
 3. <b>Slider</b><br>
-<img src="doc/slider.jpg" width="600"><br>
+<img src="doc/slider.jpg" width="600">
 Deze slider is een tweede manier om de piechart en map te updaten. Wanneer er op wordt geklikt, zullen de nieuwe piechart en map van dat specifieke jaar worden weergegeven.<br>
 4. <b>Map</b><br>
-<img src="doc/map.jpg" width="400"><br>
+<img src="doc/map.jpg" width="400">
 Deze kaart kan twee verschillende dingen weergegeven over de gemeentes in Nederland, namelijk de dichtheid van het aantal bijstandsuitkeringen of het absolute aantal bijstandsuitkeringen. De kleuren corresponderen met de legenda die ernaast staat. Voor de kaart is alleen data beschikbaar voor 2015, 2016 en 2017. Wanneer één van de andere jaren wordt geselecteerd, blijft de voorgaande kaart zichtbaar en komt er een melding die dit ook aangeeft.<br>
 5. <b>Radio buttons</b><br>
-<img src="doc/radio.jpg" width="200"><br>
+<img src="doc/radio.jpg" width="200">
 Wanneer één van de radiobuttons wordt aangeklikt, zal de kaart worden geupdate voor de soort die wordt gekozen (dichtheid/absolute aantal).<br>
 
 ## Info over repository
