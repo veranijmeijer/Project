@@ -14,7 +14,9 @@ window.onload = function() {
   var requests = [d3.json(social), d3.json(gemeente_2015), d3.json(gemeente_2016), d3.json(gemeente_2017), d3.json(country_2015), d3.json(country_2016), d3.json(country_2017)];
 
   Promise.all(requests).then(function(response) {
+    // once requests are loaded, the following will be executed
 
+    // create title and svg for linechart
     create_title("line");
     var linechart = add_svg("linechart");
     var svg_line = linechart[0];
@@ -22,6 +24,7 @@ window.onload = function() {
     var height_line = linechart[2];
     var margin_line = linechart[3];
 
+    // create title, svg and legend for piechart
     create_title("pie");
     var pie = add_svg("pie");
     var svg_pie = pie[0];
@@ -30,6 +33,7 @@ window.onload = function() {
     var margin_pie = pie[3];
     var svg_legend_pie = add_legend(svg_pie, "pie");
 
+    // create title, svg and legend for map
     create_title("map");
     add_warning();
     var map = add_svg("map");
@@ -40,6 +44,7 @@ window.onload = function() {
     var svg_legend_map = add_svg("legend")[0];
     svg_legend = add_legend(svg_legend_map, "map");
 
+    // creates slider, radiobuttons, pie, map and linechart
     add_slider(svg_pie, response, svg_map, width_map, height_map);
     add_radio(svg_map, width_map, height_map, response, svg_legend);
     create_pie(svg_pie, width_pie, height_pie, margin_pie, response, svg_line, margin_line, svg_legend_pie);

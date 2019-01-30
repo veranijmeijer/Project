@@ -29,7 +29,7 @@ function create_map(svg, margin, width, height, response) {
   var country = response[year - 2011];
 
   var bijstandByIndex = {};
-
+  // creates object with correct data
   for (var key in bijstand) {
     bijstandByIndex[key] = bijstand[key].Bijstandsdichtheid;
   }
@@ -86,31 +86,33 @@ function create_map(svg, margin, width, height, response) {
 }
 
 function add_warning() {
+  // adds warning message, which whill be shown when there is no data available
   d3.select("#map").append("p")
                    .attr("class", "warning")
                    .style("visibility", "hidden");
 }
 
 function show_warning(year, previous_year) {
+  // shows warning if no data is available for selected year
   d3.selectAll(".warning")
     .text("There is no data available for " + year + ". The map of " + previous_year + " is still being shown.")
     .style("visibility", "visible");
 }
 
 function hide_warning() {
+    // hides warning if year that has data is selected
     d3.selectAll(".warning")
       .style("visibility", "hidden");
 }
 
 function update_map(svg, width, height, response, year, sort) {
+  // updates map when a different year or sort is selected
   hide_warning();
   var previous_year = d3.selectAll(".title_map").text().substr(-4,);
   if (year < 2015) {
     show_warning(year, previous_year);
     return svg;
   } else {
-
-
     var projection = d3.geoMercator()
                        .scale(7500)
                        .translate([-width / 1.4, height * 13.89]);
@@ -119,7 +121,6 @@ function update_map(svg, width, height, response, year, sort) {
     var path = d3.geoPath().projection(projection);
 
     var bijstand = response[year - 2014];
-    // has te be changed because the gemeentes changed
     var country = response[year - 2011];
 
     var bijstandByIndex = {};
@@ -160,6 +161,8 @@ function update_map(svg, width, height, response, year, sort) {
 
     svg.call(tip);
 
+    // the entire map has to be removed an recreated, because the municipilaties
+    // changed every year
     svg.selectAll(".countries")
        .remove();
 

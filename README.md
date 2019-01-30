@@ -21,7 +21,7 @@ Op deze pagina wordt in het kort informatie gegeven over de uitkeringen in Neder
 
 ### Visualisaties
 <img src="doc/vis.jpg" width="700">
-Op deze pagina staan alle visualisaties van dit project:
+Op deze pagina staan alle visualisaties van dit project:<br>
 1. <b>Linechart</b><br>
 <img src="doc/line.jpg" width="400">
 Hierin wordt per jaar (1998-2017) weergegeven hoeveel uitkeringen er in Nederland zijn. Wanneer op één van de jaren wordt geklikt, zullen de piechart en map geupdate worden voor dat specifieke jaar.<br>

@@ -3,6 +3,7 @@
 // Assignment minor Programmeren UvA
 
 function add_slider(svg_pie, response, svg_map, width, height) {
+    // adds a slider to the page
     var dataTime = d3.range(0, 20).map(function(d) {
       return new Date(1998 + d, 10, 3);
     });
@@ -17,6 +18,7 @@ function add_slider(svg_pie, response, svg_map, width, height) {
       .tickValues(dataTime)
       .default(new Date(2017, 10, 3))
       .on('onchange', val => {
+        // on change: uupdate pie and map
         var year = d3.timeFormat('%Y')(val);
         update_pie(svg_pie, response, year);
         var sort = d3.select(".title_map").text().substr(0,9);

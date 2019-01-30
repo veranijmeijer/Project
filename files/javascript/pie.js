@@ -3,6 +3,8 @@
 // Assignment minor Programmeren UvA
 
 function create_pie(svg, margin, width, height, response, svg_line, margin_line, svg_legend_pie, year=2017) {
+  // creates piechart
+
   var format = d3.format(",");
   var security = response[0];
   var colors = {"WAO":'#e6194b', "Wajong":'#3cb44b', "WAZ":'#ffe119', "IVA":'#4363d8', "WGA":'#f58231', "Werkloosheidsuitkering":'#911eb4', "IOW":'#46f0f0', "Bijstand":'#f032e6', "IOAW":'#bcf60c', "IOAZ":'#800000', "AOW":'#008080', "ANW":'#e6beff', "AKW":'#9a6324'}
@@ -16,6 +18,7 @@ function create_pie(svg, margin, width, height, response, svg_line, margin_line,
 
   svg.call(tip);
 
+  // creates list of the correct data
   var details = []
   for (var key in security) {
     if (key == year) {
@@ -27,22 +30,26 @@ function create_pie(svg, margin, width, height, response, svg_line, margin_line,
     }
   }
 
+  // connect data to pie
   var data = d3.pie()
                .sort(null)
                .value(function(d) {
                  return d.number;
                })(details);
 
+  // defines size of segments
   var segments = d3.arc()
                    .innerRadius(0)
                    .outerRadius(250);
 
+  // determines position of piechart
   var sections = svg.append("g")
                     .attr("class", "sec")
                    .attr("transform", "translate(300, 300)")
                     .selectAll("path")
                     .data(data);
 
+  // adds piechart
   sections.enter()
           .append("path")
           .attr("d", segments)
@@ -72,11 +79,13 @@ function create_pie(svg, margin, width, height, response, svg_line, margin_line,
               .style("stroke-width",0.1);
           })
           .on('click', function(d) {
+            // on click: update linechart with selected benefit
             sort_line = this.id;
             var color = colors[sort_line];
             svg_line = update_line(svg_line, response, sort_line, color, margin_line);
           });
 
+  // makes it possible to update linechart from legend
   svg_legend_pie.selectAll(".rect_pie")
                 .on('mouseover', function(d) {
                   d3.select(this)
@@ -95,8 +104,9 @@ function create_pie(svg, margin, width, height, response, svg_line, margin_line,
 }
 
 function update_pie(svg, response, year) {
-  var previous_year = d3.selectAll(".title_pie").text().substr(-4,);
+  // updates piechart when a different year is selected
 
+  var previous_year = d3.selectAll(".title_pie").text().substr(-4,);
 
   if (year != previous_year) {
     var security = response[0];
@@ -127,7 +137,7 @@ function update_pie(svg, response, year) {
                       .selectAll("path")
                       .data(data);
 
-
+    // selects all pie elements and changes them according to the new data
     svg.selectAll(".pie")
        .transition()
        .duration(1000)

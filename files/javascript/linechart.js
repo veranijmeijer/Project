@@ -3,7 +3,7 @@
 // Assignment minor Programmeren UvA
 
 function create_linechart(svg, width, height, margin, response, svg_pie, svg_map, width_map, height_map) {
-  // this function adds the barchart to the svg made before
+  // this function adds the linechart to the already existing svg
 
   var security = response[0];
   var xScale, yScale;
@@ -11,11 +11,12 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
   var maximum_y = 0;
   var keys = [];
   var range_keys = [margin.left];
+  var nr_of_keys = 20;
 
+  // create list of data
   for (var key in security) {
     keys.push(key);
-    // 20 is het aantal keys
-    range_keys.push(range_keys[range_keys.length - 1] + (width - margin.left) / 20);
+    range_keys.push(range_keys[range_keys.length - 1] + (width - margin.left) / nr_of_keys);
     if (security[key].total > maximum_y) {
       maximum_y = security[key].total
     }
@@ -63,6 +64,7 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
 
    var format = d3.format(",");
 
+   // create tooltip
    var tip = d3.tip()
                .attr('class', 'd3-tip')
                .offset([-10, 0])
@@ -81,6 +83,7 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
                             return yScale(d[1]);
                         });
 
+  // add line
    svg.append("path")
       .attr("d", lineFunction(data))
       .attr("stroke", "green")
@@ -118,6 +121,7 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
          .style("opacity", 0.8);
      })
      .on('click', function(d) {
+       // on click: update pie and map
        var year = d[0];
        var sort = d3.select(".title_map").text().substr(0,9);
        if (sort != "Dichtheid") {
@@ -133,9 +137,11 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
 }
 
 function update_line(svg, response, sort_line, color, margin) {
+  // when the pie chart is clicked: adds/removes the line
   var line = "line_" + sort_line;
   var circle = "circle_" + sort_line;
 
+  // checks if line already exists
   if (svg.selectAll("#" + line).empty() == true) {
     var security = response[0];
     var xScale, yScale;
@@ -143,11 +149,14 @@ function update_line(svg, response, sort_line, color, margin) {
     var maximum_y = 0;
     var keys = [];
     var range_keys = [margin.left];
+    var nr_of_keys = 20;
+    var width = 800;
+    var height = 600;
 
+    // creates list of data
     for (var key in security) {
       keys.push(key);
-      // 20 is het aantal keys
-      range_keys.push(range_keys[range_keys.length - 1] + (800 - margin.left) / 20);
+      range_keys.push(range_keys[range_keys.length - 1] + (width - margin.left) / nr_of_keys);
       if (security[key].total > maximum_y) {
         maximum_y = security[key].total
       }
@@ -161,9 +170,10 @@ function update_line(svg, response, sort_line, color, margin) {
 
     yScale = d3.scaleLinear()
                    .domain([0, maximum_y])
-                   .range([600 - margin.bottom, margin.top]);
+                   .range([height - margin.bottom, margin.top]);
 
      var data = []
+     // adds correct data to datalist
      for (var key in security) {
        var info;
        if (sort_line == "WAO") {
@@ -254,6 +264,7 @@ function update_line(svg, response, sort_line, color, margin) {
            .style("opacity", 0.8);
        });
   } else {
+    // if line was already there, removes it
     svg.selectAll("#" + line).remove();
     svg.selectAll("." + circle).remove();
   }
