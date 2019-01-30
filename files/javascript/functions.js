@@ -141,7 +141,7 @@ function change_title(sort, year, sort_map="") {
 function update_legend(svg, sort) {
   // this function updates the legend once a different kind of map is chosen
   var values;
-  if (sort == "Bijstandsdichtheid") {
+  if (sort == "Dichtheid") {
     values = [0, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100];
   } else {
     values = ["0", "6,250", "12,500", "18,750", "25,000", "31,250", "37,500", "43,750", "50,000"];
