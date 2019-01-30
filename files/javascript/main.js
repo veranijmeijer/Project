@@ -3,13 +3,13 @@
 // Assignment minor Programmeren UvA
 
 window.onload = function() {
-  var social = "data/json/social_security.json";
-  var gemeente_2015 = "data/json/gemeente_2015.json";
-  var gemeente_2016 = "data/json/gemeente_2016.json";
-  var gemeente_2017 = "data/json/gemeente_2017.json";
-  var country_2015 = "data/json/map_2015.json";
-  var country_2016 = "data/json/map_2016.json";
-  var country_2017 = "data/json/map_2017.json";
+  var social = "../data/json/social_security.json";
+  var gemeente_2015 = "../data/json/gemeente_2015.json";
+  var gemeente_2016 = "../data/json/gemeente_2016.json";
+  var gemeente_2017 = "../data/json/gemeente_2017.json";
+  var country_2015 = "../data/json/map_2015.json";
+  var country_2016 = "../data/json/map_2016.json";
+  var country_2017 = "../data/json/map_2017.json";
 
   var requests = [d3.json(social), d3.json(gemeente_2015), d3.json(gemeente_2016), d3.json(gemeente_2017), d3.json(country_2015), d3.json(country_2016), d3.json(country_2017)];
 

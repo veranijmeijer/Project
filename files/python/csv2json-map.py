@@ -1,5 +1,6 @@
 # Name: Vera Nijmeijer
 # Student ID: 10753567
+# Assignment minor Programmeren UvA
 
 import csv
 import json

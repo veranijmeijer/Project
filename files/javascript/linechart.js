@@ -2,66 +2,6 @@
 // Student ID: 10753567
 // Assignment minor Programmeren UvA
 
-function create_title(sort, country="") {
-  // this function adds the title above the svg
-  if (sort == "map") {
-    d3.select("#map").append("h6").attr("class", "title_map").text("Dichtheid van bijstandsuitkeringen (per 1000 inwoners) in Nederland - 2017");
-  } else if (sort == "pie") {
-    d3.select("#piechart").append("h6").attr("class", "title_pie").text("De verdeling van uitkeringen - 2017");
-  } else {
-    d3.select("#linechart").append("h6").attr("class", "title_line").text("Aantal uitkeringen in Nederland");
-  }
-}
-
-function add_svg(sort) {
-  // this function adds the svg, but does not fill it yet
-  var svg, margin, width, height;
-
-  if (sort == "map") {
-    margin = {top: 0, right: 0, bottom: 0, left: 0};
-    width = 800;
-    height = 800;
-    svg = d3.select("#map")
-             .append("svg")
-             .attr("viewBox", "0 0 800 800")
-             .attr("preserveAspectRatio", "xMidYMid meet")
-             // .attr("fill", "grey")
-             // .attr("width", width)
-             // .attr("height", height)
-             .classed("svg", true);
-    // svg.append("rect")
-    //    .attr("width", "100%")
-    //    .attr("height", "100%")
-    //    .attr("fill", "lightgrey");
-  } else if (sort == "pie") {
-    width = 800;
-    height = 600;
-    svg = d3.select("#piechart")
-            .append("svg")
-            .attr("viewBox", "0 0 800 600")
-            .attr("preserveAspectRatio", "xMidYMid meet")
-            // .attr("width", width)
-            // .attr("height", height)
-            .classed("svg", true);
-  } else {
-    margin = {top: 30, right: 10, bottom: 60, left: 70};
-    width = 800;
-    height = 600;
-    svg = d3.select("#linechart")
-            .append("svg")
-            .attr("viewBox", "0 0 800 600")
-            .attr("preserveAspectRatio", "xMidYMid meet")
-            // .attr("width", width)
-            // .attr("height", height)
-            .classed("svg", true);
-  }
-
-
-
-  return [svg, width, height, margin];
-
-}
-
 function create_linechart(svg, width, height, margin, response, svg_pie, svg_map, width_map, height_map) {
   // this function adds the barchart to the svg made before
 
@@ -95,7 +35,6 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
    svg.append("g")
       .attr("class", "y-axis")
       .attr("transform", "translate(70, 0)")
-      // .attr("font", "10px verdana")
       .call(d3.axisLeft(yScale));
 
    // add label y-axis
@@ -115,17 +54,12 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      .attr("class", "x-axis-text")
      .attr("x", width - margin.right - 80)
      .attr("y", 585)
-     // .attr("text-anchor", "end")
      .text("Jaartal");
 
    var data = []
    for (var key in security) {
      data.push([+key, security[key].total]);
-     // console.log(key);
-     // console.log(security[key]);
    }
-
-   // console.log(data);
 
    var format = d3.format(",");
 
@@ -185,39 +119,144 @@ function create_linechart(svg, width, height, margin, response, svg_pie, svg_map
      })
      .on('click', function(d) {
        var year = d[0];
-       // console.log(year);
        var sort = d3.select(".title_map").text().substr(0,9);
-       console.log(sort);
        if (sort != "Dichtheid") {
          sort = "Totale aantal";
        }
        svg_pie = update_pie(svg_pie, response, year);
-       svg_map = update_map_year(svg_map, width_map, height_map, response, year, sort);
+       svg_map = update_map(svg_map, width_map, height_map, response, year, sort);
        change_title("pie", year);
        change_title("map", year, sort);
-       update_slider(year);
      });
 
   return [svg, xScale, yScale];
 }
 
-function change_title(sort, year, sort_map="") {
-  // this function changes the title when the barchart has to be updated
-  if (sort == "pie") {
-    d3.selectAll(".title_pie").each(function(d, i) {
-      d3.select(this).text("De verdeling van uitkeringen - " + year);
-    });
-  } else {
-    if (year >= 2015) {
-      d3.selectAll(".title_map").each(function(d, i) {
-        console.log(sort_map, "joe");
-        if (sort_map == "Dichtheid"){
-          d3.select(this).text("Dichtheid van bijstandsuitkeringen (per 1000 inwoners) in Nederland - " + year);
-        } else {
-          d3.select(this).text("Totale aantal bijstandsuitkeringen in Nederland - " + year);
-        }
+function update_line(svg, response, sort_line, color, margin) {
+  var line = "line_" + sort_line;
+  var circle = "circle_" + sort_line;
 
-      })
+  if (svg.selectAll("#" + line).empty() == true) {
+    var security = response[0];
+    var xScale, yScale;
+
+    var maximum_y = 0;
+    var keys = [];
+    var range_keys = [margin.left];
+
+    for (var key in security) {
+      keys.push(key);
+      // 20 is het aantal keys
+      range_keys.push(range_keys[range_keys.length - 1] + (800 - margin.left) / 20);
+      if (security[key].total > maximum_y) {
+        maximum_y = security[key].total
+      }
     }
+    range_keys.splice(range_keys.length - 1, 1);
+
+    // define x and y scale
+    xScale = d3.scaleOrdinal()
+                   .domain(keys)
+                   .range(range_keys);
+
+    yScale = d3.scaleLinear()
+                   .domain([0, maximum_y])
+                   .range([600 - margin.bottom, margin.top]);
+
+     var data = []
+     for (var key in security) {
+       var info;
+       if (sort_line == "WAO") {
+         info = security[key].WAO;
+       } else if (sort_line == "Wajong") {
+         info = security[key].Wajong;
+       } else if (sort_line == "WAZ") {
+         info = security[key].WAZ;
+       } else if (sort_line == "IVA") {
+         info = security[key].IVA;
+       } else if (sort_line == "WGA") {
+         info = security[key].WGA;
+       } else if (sort_line == "Werkloosheidsuitkering") {
+         info = security[key].Werkloosheidsuitkering;
+       } else if (sort_line == "IOW") {
+         info = security[key].IOW;
+       } else if (sort_line == "Bijstand") {
+         info = security[key].Bijstand;
+       } else if (sort_line == "IOAW") {
+         info = security[key].IOAW;
+       } else if (sort_line == "IOAZ") {
+         info = security[key].IOAZ;
+       } else if (sort_line == "AOW") {
+         info = security[key].AOW;
+       } else if (sort_line == "ANW") {
+         info = security[key].ANW;
+       } else if (sort_line == "AKW") {
+         info = security[key].AKW;
+       }
+       data.push([+key, info]);
+     }
+
+     var format = d3.format(",");
+
+     var tip = d3.tip()
+                 .attr('class', 'd3-tip')
+                 .offset([-10, 0])
+                 .html(function(d) {
+                     return "<strong>Jaartal: </strong><span class='details'>" + d[0] + "<br><strong>Aantal uitkeringen: </strong><span class='details'>" + format(d[1]) +"</span>";
+                 });
+
+     svg.call(tip);
+
+     // add line
+     var lineFunction = d3.line()
+                          .x(function(d) {
+                              return xScale(d[0]);
+                          })
+                          .y(function(d) {
+                              return yScale(d[1]);
+                          });
+
+     svg.append("path")
+        .attr("d", lineFunction(data))
+        .attr("stroke", color)
+        .attr("stroke-width", 2)
+        .attr("fill", "none")
+        .attr("id", line);
+
+    // add dots
+    svg.selectAll(circle)
+      .data(data)
+      .enter().append("circle")
+       .attr("class", circle)
+       .attr("r", 3.5)
+       .attr("cx", function(d) {
+         return xScale(d[0]);
+       })
+       .attr("cy", function(d) {
+         return yScale(d[1]);
+       })
+       .style("fill", color)
+       .style("opacity", 0.8)
+       .on('mouseover',function(d) {
+         // on mouseover: show tooltip and change color
+         tip.show(d);
+
+         d3.select(this)
+           .attr("r", 5)
+           .style("opacity", 1);
+       })
+       .on('mouseout', function(d) {
+         // on mouseout: hide tooltip and change color to its original
+         tip.hide(d);
+
+         d3.select(this)
+           .attr("r", 3.5)
+           .style("opacity", 0.8);
+       });
+  } else {
+    svg.selectAll("#" + line).remove();
+    svg.selectAll("." + circle).remove();
   }
+
+  return svg;
 }

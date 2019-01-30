@@ -27,7 +27,6 @@ function create_pie(svg, margin, width, height, response, svg_line, margin_line,
     }
   }
 
-  // source: https://www.youtube.com/watch?v=P8KNr0pDqio
   var data = d3.pie()
                .sort(null)
                .value(function(d) {
@@ -77,6 +76,7 @@ function create_pie(svg, margin, width, height, response, svg_line, margin_line,
             var color = colors[sort_line];
             svg_line = update_line(svg_line, response, sort_line, color, margin_line);
           });
+
   svg_legend_pie.selectAll(".rect_pie")
                 .on('mouseover', function(d) {
                   d3.select(this)
@@ -136,135 +136,5 @@ function update_pie(svg, response, year) {
          return colors[d.data.name];
        });
   }
-  return svg;
-}
-
-function update_line(svg, response, sort_line, color, margin) {
-  var line = "line_" + sort_line;
-  var circle = "circle_" + sort_line;
-  console.log(svg);
-
-  console.log(svg.selectAll("#" + line).empty());
-  if (svg.selectAll("#" + line).empty() == true) {
-    console.log("toeveoegen");
-    var security = response[0];
-    var xScale, yScale;
-
-    var maximum_y = 0;
-    var keys = [];
-    var range_keys = [margin.left];
-
-    for (var key in security) {
-      keys.push(key);
-      // 20 is het aantal keys
-      range_keys.push(range_keys[range_keys.length - 1] + (800 - margin.left) / 20);
-      if (security[key].total > maximum_y) {
-        maximum_y = security[key].total
-      }
-    }
-    range_keys.splice(range_keys.length - 1, 1);
-
-    // define x and y scale
-    xScale = d3.scaleOrdinal()
-                   .domain(keys)
-                   .range(range_keys);
-
-    yScale = d3.scaleLinear()
-                   .domain([0, maximum_y])
-                   .range([600 - margin.bottom, margin.top]);
-
-     var data = []
-     for (var key in security) {
-       var info;
-       if (sort_line == "WAO") {
-         info = security[key].WAO;
-       } else if (sort_line == "Wajong") {
-         info = security[key].Wajong;
-       } else if (sort_line == "WAZ") {
-         info = security[key].WAZ;
-       } else if (sort_line == "IVA") {
-         info = security[key].IVA;
-       } else if (sort_line == "WGA") {
-         info = security[key].WGA;
-       } else if (sort_line == "Werkloosheidsuitkering") {
-         info = security[key].Werkloosheidsuitkering;
-       } else if (sort_line == "IOW") {
-         info = security[key].IOW;
-       } else if (sort_line == "Bijstand") {
-         info = security[key].Bijstand;
-       } else if (sort_line == "IOAZ") {
-         info = security[key].IOAZ;
-       } else if (sort_line == "AOW") {
-         info = security[key].AOW;
-       } else if (sort_line == "ANW") {
-         info = security[key].ANW;
-       } else if (sort_line == "AKW") {
-         info = security[key].AKW;
-       }
-       data.push([+key, info]);
-     }
-
-     var format = d3.format(",");
-
-     var tip = d3.tip()
-                 .attr('class', 'd3-tip')
-                 .offset([-10, 0])
-                 .html(function(d) {
-                     return "<strong>Jaartal: </strong><span class='details'>" + d[0] + "<br><strong>Aantal uitkeringen: </strong><span class='details'>" + format(d[1]) +"</span>";
-                 });
-
-     svg.call(tip);
-
-     // add line
-     var lineFunction = d3.line()
-                          .x(function(d) {
-                              return xScale(d[0]);
-                          })
-                          .y(function(d) {
-                              return yScale(d[1]);
-                          });
-
-     svg.append("path")
-        .attr("d", lineFunction(data))
-        .attr("stroke", color)
-        .attr("stroke-width", 2)
-        .attr("fill", "none")
-        .attr("id", line);
-
-    // add dots
-    svg.selectAll(circle)
-      .data(data)
-      .enter().append("circle")
-       .attr("class", circle)
-       .attr("r", 3.5)
-       .attr("cx", function(d) {
-         return xScale(d[0]);
-       })
-       .attr("cy", function(d) {
-         return yScale(d[1]);
-       })
-       .style("fill", color)
-       .style("opacity", 0.8)
-       .on('mouseover',function(d) {
-         // on mouseover: show tooltip and change color
-         tip.show(d);
-
-         d3.select(this)
-           .attr("r", 5)
-           .style("opacity", 1);
-       })
-       .on('mouseout', function(d) {
-         // on mouseout: hide tooltip and change color to its original
-         tip.hide(d);
-
-         d3.select(this)
-           .attr("r", 3.5)
-           .style("opacity", 0.8);
-       });
-  } else {
-    svg.selectAll("#" + line).remove();
-    svg.selectAll("." + circle).remove();
-  }
-
   return svg;
 }

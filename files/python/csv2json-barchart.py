@@ -1,5 +1,6 @@
 # Name: Vera Nijmeijer
 # Student ID: 10753567
+# Assignment minor Programmeren UvA
 
 import csv
 import json
@@ -16,9 +17,6 @@ def create_json(infile, outfile):
         # # removes "" from fieldnames
         for name in names:
             fieldnames.append(name[1:-1])
-
-
-        # fieldnames = ["WAOUitkeringen_2", "WajongUitkeringen_3", "WAZUitkeringen_4", "IVAUitkeringen_6", "WGAUitkeringen_7", "NietSeizoengecorrigeerd_8", "IOWUitkeringen_10", "TotaalBijstandsuitkeringen_11", "IOAWUitkeringen_14", "IOAZUitkeringen_15", "AOWUitkeringen_16", "AnwUitkeringen_17", "AKWUitkeringen_18"]
 
         # extracts information from csv file into dictionary
         dates = csv.DictReader(input, fieldnames=fieldnames)
