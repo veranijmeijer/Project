@@ -112,8 +112,9 @@ function update_map(svg, width, height, response, year, sort) {
 
 
     var projection = d3.geoMercator()
-                       .scale(8900)
-                       .translate([-width / 1.55, height * 12.4]);
+                       .scale(7500)
+                       .translate([-width / 1.4, height * 13.89]);
+
 
     var path = d3.geoPath().projection(projection);
 
