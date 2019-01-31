@@ -16,15 +16,15 @@ De visualisatie op de website bestaat uit vijf onderdelen:
 ### Bestanden en functies
 #### Data
 * csv: in deze map staan de csv bestanden, zoals die afkomstig zijn van de site van het CBS. Deze data is gebruikt voor het maken van de visualisaties:
-  * [gemeente_2015.csv](https://github.com/veranijmeijer/Project/blob/master/files/data/csv/gemeente_2015.csv)
-  * [gemeente_2016.csv](https://github.com/veranijmeijer/Project/blob/master/files/data/csv/gemeente_2016.csv)
-  * [gemeente_2017.csv](https://github.com/veranijmeijer/Project/blob/master/files/data/csv/gemeente_2017.csv)
-  * [social_security.csv](https://github.com/veranijmeijer/Project/blob/master/files/data/csv/social_security.csv)
+  * gemeente_2015.csv
+  * gemeente_2016.csv
+  * gemeente_2017.csv
+  * social_security.csv
 * json: de eerste 4 bestanden in deze map, zijn de bestanden van het CBS nadat ze zijn omgezet naar json bestanden (met behulp van de bestanden [csv2json-linechart.py](#Python) en [csv2json-map.py](#Python).
-  * [gemeente_2015.json](https://github.com/veranijmeijer/Project/blob/master/files/data/json/gemeente_2015.json)
-  * [gemeente_2016.json](https://github.com/veranijmeijer/Project/blob/master/files/data/json/gemeente_2016.json)
-  * [gemeente_2017.json](https://github.com/veranijmeijer/Project/blob/master/files/data/json/gemeente_2017.json)
-  * [social_security.json](https://github.com/veranijmeijer/Project/blob/master/files/data/json/social_security.json)
+  * gemeente_2015.json
+  * gemeente_2016.json
+  * gemeente_2017.json
+  * social_security.json
 
 
 #### HTML
