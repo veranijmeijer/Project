@@ -50,10 +50,32 @@ In deze map staan drie bestanden:
   * update_line: deze functie zorgt ervoor dat een lijn wordt toegevoegd of verwijderd als er op de piechart wordt geklikt. Er wordt eerst gecontroleerd of de specifieke lijn al bestaat. Als hij al bestaat, wordt hij veranderd en anders wordt hij toegevoegd. Het toevoegen werkt grotendeels hetzelfde als de functie create_linechart. Bij het toevoegen van de lijn en cirkels worden een respectievelijk een id/class meegegeven, zodat ze ook weer verwijderd kunnen worden.
 * main.js: in dit bestand worden alle functies uit de andere bestanden aangeroepen wanneer de pagina geopend wordt.
 * map.js: in dit bestand staan alle functies die alleen voor de map gebruikt worden
-* pie.js: in dit bestand staan alle functies die alleen voor de pie gebruikt wordt
-* radio.js: in dit bestand staat de functie die ervoor zorgt dat de radio buttons gekoppeld worden aan het updaten van de map
-* slider.js: in dit bestand staat de functie die de slider aanmaakt
+  * create_map: deze functie zorgt ervoor dat de kaart van Nederland wordt weergegeven met de bijstandsdichtheid in 2017. Er wordt een tip aangemaakt, de kleuren worden bepaald en de projectie wordt ingesteld. De magic numbers die bij de projection staan, zijn bepaald door te zoeken waar de plattegrond stond en daardoor de juiste positie te vinden. Vervolgens wordt de data gekoppeld aan de data van de plattegrond. Daarna worden de landen toegevoegd, waarbij de tooltip verschijnt wanneer er over een land wordt bewogen met de muis.
+  * add_warning: er wordt een waarschuwingsbericht (verborgen) toegevoegd, zodat die kan verschijnen wanneer het nodig is.
+  * show_warning: wanneer een jaartal wordt geselecteerd waarvan geen data beschikbaar is voor de map, komt het waarschuwingsbericht in beeld.
+  * hide_warning: wanneer vervolgens weer een geschikt jaartal wordt geselecteerd, wordt de waarschuwing verborgen.
+  * update_map: deze functie wordt aangeroepen als óf een jaartal wordt geselecteerd (in de linechart of slider) of wanneer met de radio buttons een andere soort map wordt gekozen. Deze functie lijkt in eerste instantie erg omslachtig, omdat de hele map wordt verwijderd en opnieuw toegevoegd (in plaats van alleen de data updaten). Hier is echter een reden voor. De gemeentes in Nederland zijn de afgelopen jaren ieder jaar veranderd, zo zijn er gemeentes samengevoegd, maar ook is er een gemeente opgesplitst en over omliggende gemeentes verdeeld. Daarom wordt in deze functie de informatie opgehaald over het juiste jaar en alles opnieuw toegevoegd. De functie werkt verder grotendeels hetzelfde als de create_map functie.
+* pie.js: in dit bestand staan alle functies die alleen voor de pie gebruikt wordt:
+  * create_pie: deze functie voegt de piechart toe. Er wordt een tip aangemaakt. Vervolgens wordt een lijst van objecten aangemaakt, waarin de naam van de uitkering staat en het aantal uitkeringen dat daarvan is uitgegeven in een bepaald jaar. De data wordt gekoppeld aan de piechart en de locaties wordt bepaald. Daarna worden de segmenten toegevoegd. Daarbij wordt gelijk de 'onclick' functie toegevoegd, waarbij de linechart wordt geupdate. Aan het einde van de functie, zit een stuk waarbij de legenda die bij deze piechart hoort, ook interactief wordt gemaakt. Daarbij geldt hetzelfde als bij de piechart, namelijk dat als er op een uitkering geklikt wordt, de linechart wordt geudate.
+  * update_pie: met deze functie wordt de piechart geupdate. De data wordt aangepast, waarna de bestaande segmenten worden geupdate.
+* radio.js: in dit bestand staat de functie die ervoor zorgt dat de radio buttons gekoppeld worden aan het updaten van de map:
+  * add_radio: de bestaande radio buttons worden geselecteerd. Vervolgens wordt daar een 'onclick' functie aan toegevoegd, zodat de update_map, change_title en update_legend worden aangeroepen wanneer op een van de buttons wordt geklikt.
+* slider.js: in dit bestand staat de functie die de slider aanmaakt:
+  * add_slider: de slider wordt toegevoegd met een 'onchange' function die de update_pie en update_map aanroept.
+
 
 #### Python
+* csv2json-linechart.py
+* csv2json-map.py
+
+Deze 2 bestanden lijken erg op elkaar, uiteindelijk zouden ze samengevoegd kunnen worden tot 1 bestand met een extra parameter. De functie in dit bestand: create_json, zet het csv bestand om tot een json bestand, met alleen de informatie die uiteindelijk gebruikt wordt in de visualisaties.
 
 #### CSS
+In dit bestand wordt de opmaak van de website geregeld.
+
+* styles.css
+
+## Proces
+
+
+## Reflectie
