@@ -13,7 +13,7 @@ Met behulp van deze visualisatie wordt duidelijk gemaakt hoeveel uitkeringen er 
 
 <img src="doc/home.jpg" width="700"><br>
 ## Demonstratie website
-Klik op onderstaand plaatje om het filmpje te openen:
+Klik op onderstaand plaatje om het filmpje te openen:<br>
 [![](https://img.youtube.com/vi/Kd2JZdZi_c4/0.jpg)](https://youtu.be/Kd2JZdZi_c4)
 
 
